@@ -1,0 +1,837 @@
+div {
+    box-sizing: border-box;
+}
+
+.popup-link {
+    display: inline-block;
+}
+
+.popup {
+    max-width: 1146px;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #C5EBE7;
+}
+
+
+
+.slider-buy {
+    width: 86%;
+    height: 680px;
+    margin: 0 auto;
+    z-index: 10;
+    border-radius: 10px;
+    background-image: url(../images/slider-buy-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animation-fade, 0.4s;
+}
+
+.slider__buy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.slider__buy-right {
+    padding-top: 63px;
+    padding-right: 68px;
+}
+
+.slider__buy-title {
+    padding-bottom: 8px;
+    font-family: Rubik;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 42px;
+    color: #3E767B;
+}
+
+.slider__buy-text {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3E767B;
+}
+
+
+.slider__buy-img img {
+    width: min-content;
+    padding-left: 78px;
+}
+
+.slider__buy-items {
+    padding-left: 130px;
+    padding-top: 63px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.slider__buy-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.buy__items-text {
+    margin-top: 10px;
+
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #3E767B;
+
+}
+
+.buy__right-inner {
+    padding-top: 141px;
+
+}
+
+.buy__right-value {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 21px;
+}
+
+.buy__right-value span {
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.buy__right-quanity {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.quanity__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quanity__num {
+    margin-top: 18px;
+    padding-left: 31px;
+    margin-bottom: 18px;
+    padding-right: 20px;
+    border-right: 1px solid rgba(103, 175, 168, 0.4);
+}
+
+.quanity__num-title {
+    text-transform: uppercase;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    color: #3E767B;
+    padding-bottom: 5px;
+}
+
+.quanity__num-piece {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3E767B;
+
+}
+
+.plus__minus {
+    padding-right: 30px;
+}
+
+.buy__minus {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 3px solid #3E767B;
+    background-color: #C5EBE7;
+
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #3E767B;
+}
+
+.plus__minus-num {
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #3E767B;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.buy__plus {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 3px solid #3E767B;
+    background-color: #C5EBE7;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #3E767B;
+}
+
+.sum__num-btn {
+    padding: 17px 45px !important;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+
+.buy__right-sum {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sum__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sum__num {
+    margin-top: 18px;
+    padding-left: 31px;
+    margin-bottom: 18px;
+    padding-right: 50px;
+    border-right: 1px solid rgba(103, 175, 168, 0.4);
+}
+
+.sum__num-title {
+    text-transform: uppercase;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    color: #3E767B;
+    padding-bottom: 5px;
+}
+
+.sum__num-rub {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3E767B;
+}
+
+.slider-item-two {
+    width: 94%;
+    height: 540px;
+    margin: 30px auto 0;
+    border-radius: 10px;
+    background-image: url(../images/step-two-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.arrow-left {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 220px;
+}
+.arrow-right {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+}
+
+::-webkit-input-placeholder {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+}
+::-moz-placeholder {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+}
+:-moz-placeholder {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+}
+
+:-ms-input-placeholder { 
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+}
+
+.slider__two-wrapper {
+    padding: 50px 68px;
+}
+
+.your_name, 
+.your_sername, 
+.your_index, 
+.your_sity, 
+.your_street, 
+.your_house, 
+.your_housing, 
+.your_flat, 
+.your_tel, 
+.your_email {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+}
+
+.slider__two-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 36px;
+}
+
+
+.slider__two-title {
+    font-family: Rubik, sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    color: #3e767b;
+    text-shadow: 0 -3px 0 #b6dad6, 0 -2px 0 #b6dad6, 0 2px 0 #b6dad6, 0 2px 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -1px -2px 0 #b6dad6, 1px -2px 0 #b6dad6, -1px 2px 0 #b6dad6, 1px 2px 0 #b6dad6, -2px -1px 0 #b6dad6, 2px -1px 0 #b6dad6, -2px 1px 0 #b6dad6, 2px 1px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, 0 -3px 0px;
+}
+
+.slider__two-step {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    color: #3e767b;
+    text-shadow: 0 -3px 0 #b6dad6, 0 -2px 0 #b6dad6, 0 2px 0 #b6dad6, 0 2px 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -1px -2px 0 #b6dad6, 1px -2px 0 #b6dad6, -1px 2px 0 #b6dad6, 1px 2px 0 #b6dad6, -2px -1px 0 #b6dad6, 2px -1px 0 #b6dad6, -2px 1px 0 #b6dad6, 2px 1px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, 0 -3px 0px;
+}
+.variant input[type=radio] {
+    display: none;
+}
+.variant label {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+.variant input[type=radio]:checked + label {
+    background: #A8DBD5;
+}
+.variant input[type=radio]:disabled + label {
+    background: #fff;
+}
+
+.slider__two-name p {
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+    color: #A8DBD5;
+}
+
+.slider__two-inputs {
+    background: #FFFFFF;
+    border: 1px solid #A8DBD5;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.first__buy-inputs {
+    padding-bottom: 44px;
+}
+
+.your_name {
+    margin-right: 20px;
+}
+
+.your_name,
+.your_sername {
+    padding: 13px 120px 13px 30px;
+}
+
+.slider__two-contacts {
+    margin-bottom: 64px;
+}
+
+.slider__two-contacts  p {
+    padding-bottom: 23px;
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #A8DBD5;
+}
+
+.second__buy-inputs {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.your_index {
+    padding: 13px 0px 13px 30px;
+    margin-right: 20px;
+}
+
+.your_sity {
+    padding: 13px 45px 13px 30px;
+    margin-right: 20px;
+}
+
+.your_street {
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.third__buy-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.your_house {
+    padding: 13px 0px 13px 30px;
+    width: 132px;
+    margin-right: 10px;
+}
+
+.your_housing {
+    padding: 13px 0px 13px 30px;
+    width: 132px;
+        margin-right: 10px;
+}
+
+.your_flat {
+    padding: 13px 0px 13px 30px;
+    width: 132px;
+        margin-right: 10px;
+}
+
+.your_tel {
+    padding: 13px 0px 13px 30px;
+    width: 268px;
+        margin-right: 10px;
+}
+
+.your_email {
+    padding: 13px 0px 13px 30px;
+    width: 268px;
+}
+
+.slider__three-wrapper {
+    padding: 50px 68px;
+}
+
+.info__img {
+    width: min-content;
+    margin-right: 10px;
+}
+
+.slider__three-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 37px;
+}
+
+.slider__three-title {
+    font-family: Rubik, sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    color: #3e767b;
+    text-shadow: 0 -3px 0 #b6dad6, 0 -2px 0 #b6dad6, 0 2px 0 #b6dad6, 0 2px 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -1px -2px 0 #b6dad6, 1px -2px 0 #b6dad6, -1px 2px 0 #b6dad6, 1px 2px 0 #b6dad6, -2px -1px 0 #b6dad6, 2px -1px 0 #b6dad6, -2px 1px 0 #b6dad6, 2px 1px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, 0 -3px 0px;
+}
+
+.slider__three-step {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    color: #3e767b;
+    text-shadow: 0 -3px 0 #b6dad6, 0 -2px 0 #b6dad6, 0 2px 0 #b6dad6, 0 2px 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -1px -2px 0 #b6dad6, 1px -2px 0 #b6dad6, -1px 2px 0 #b6dad6, 1px 2px 0 #b6dad6, -2px -1px 0 #b6dad6, 2px -1px 0 #b6dad6, -2px 1px 0 #b6dad6, 2px 1px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, 0 -3px 0px;
+}
+
+.slider__three-confirm p {
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    color: #A8DBD5;
+}
+
+.slider__three-info {
+    padding-bottom: 40px;
+}
+
+.info__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.info__name p {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+    margin-right: 8px;
+}
+
+.info__name span {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #143C39;
+}
+
+.info__address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.info__address p {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+    margin-right: 8px;
+}
+
+.info__address span {
+        font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #143C39;
+}
+
+.info__tel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.info__tel p {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+    margin-right: 8px;
+}
+
+.info__tel span {
+        font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #143C39;
+}
+
+.info__email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.info__email p {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+    margin-right: 8px;
+}
+
+.info__email span {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #143C39;
+}
+
+.slider__three-delivery p {
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #A8DBD5;
+    margin-bottom: 18px;
+}
+
+.variant {
+    padding: 13px 30px;
+    background: #FFFFFF;
+    border: 1px solid #A8DBD5;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.variant__item-three {
+    margin-right: 0;
+}
+
+
+.slider__three-variants {
+    display: flex;
+    justify-content: space-between;
+}
+
+.variant.active {
+    background: #D8F8F4;
+}
+
+.variant p {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+}
+
+.variant span {
+    font-family: Segoe UI;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: #3E767B;
+}
+
+.slider-item-three, .slider-item-four {
+    width: 100%;
+    height: 580px;
+    border-radius: 10px;
+    background-image: url(../images/step-two-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slider__four-wr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__four-confirm p {
+    padding-bottom: 0;
+}
+
+.slider__four-img {
+    width: 520px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.slider__four-info {
+    width: 422px;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-left: 1px solid #A8DBD5;
+    padding-left: 30px;
+}
+
+.slider__four-info-img {
+    width: 272px;
+    height: 143px;
+    transform: translateX(30%);
+}
+
+.slider__four-info-cost {
+    font-family: seogeNormal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #3E767B;
+    display: flex;
+    justify-content: space-between;
+    margin: 3.5px 0;
+}
+
+.slider__four-info-cost div:nth-child(1) {
+    width: 60%;
+    border-bottom: 1px dashed #3E767B;
+}
+
+.slider__four-info-cost div:nth-child(2) {
+    font-weight: bold;
+    color: #3E767B;
+    text-transform: none;
+}
+
+.slider__four-info-line {
+    width: 108%;
+    border: none;
+    border-top: 1px solid #A8DBD5;
+    margin: 18.5px 0 10.5px;
+    transform: translateX(-30px);
+}
+
+.slider__four-info-pol {
+    margin-top: 14px;
+    font-family: seogeNormal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #3E767B;
+}
+
+.slider__four-info-pol img {
+    width: 15px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.slick-arrow {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+}
+
+.slick-prev {
+    bottom: 63px;
+    right: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.slick-next {
+    bottom: 63px;
+    right: 63px;
+    display: flex;
+    align-items: center;
+}
+
+.slick-prev span {
+    margin-left: 25px;
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #3E767B;
+}
+
+.slick-next span {
+    margin-right: 25px;
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #3E767B;
+}
+
+.send__money {
+    position: absolute;
+    bottom: 50px;
+    right: 63px;
+}
+
+.slider__dots-active {
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #3E767B;
+}
+
+.slider__dots-inactive {
+    font-family: Segoe UI;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(62, 118, 123, 0.4);
+}
+
+.slider__dots-three {
+    padding-top: 54px;
+}
+
+.last__two-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.first__three-inputs {
+    display: flex;
+    align-items: center;
+}
+
