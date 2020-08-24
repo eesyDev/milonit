@@ -4,8 +4,8 @@ $(document).ready(function () {
             open: function () {
                 $('.slider').slick({
                     arrows: true,
-                    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.png" alt=""><span>назад</span></button>',
-                    nextArrow: '<button class="slick-arrow slick-next"><span>вперед</span><img src="images/buy-arrow-right.png" alt=""></button>',
+                    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.png" alt=""><span>back</span></button>',
+                    nextArrow: '<button class="slick-arrow slick-next"><span>forward</span><img src="images/buy-arrow-right.png" alt=""></button>',
                     dots: false,
                     infinite: false,
                 });
@@ -128,7 +128,7 @@ window.addEventListener('DOMContentLoaded', function() {
         buyQuant.innerHTML = ++quantity;
         quantVal.innerHTML = quantity + ' pc';
         buySum.innerHTML = price * quantity + ' rub';
-        volume.innerHTML = curVolume * quantity + 'ml';
+        volume.innerHTML = curVolume * quantity + ' ml';
         validSum.textContent = price * quantity + ' rub';            
         if (quantity > 1) {
             buyMinus.classList.remove('buy__minus--disable');
