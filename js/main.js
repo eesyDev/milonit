@@ -129,8 +129,7 @@ window.addEventListener('DOMContentLoaded', function() {
         quantVal.innerHTML = quantity + ' шт';
         buySum.innerHTML = price * quantity + ' руб';
         volume.innerHTML = curVolume * quantity + 'мл';
-        validSum.textContent = price * quantity + ' руб';
-        appData.sum = sumBuy;             
+        validSum.textContent = price * quantity + ' руб';             
         if (quantity > 1) {
             buyMinus.classList.remove('buy__minus--disable');
         }
@@ -234,6 +233,21 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+    let videoBtn = document.querySelector('.review__modal'),
+        closeArt = document.querySelector('.close-art'),
+        overlayArt = document.querySelector('.overlay-art'),
+        article = document.querySelector('.article');
+
+        videoBtn.addEventListener('click', function() {
+            article.classList.add('article-active');
+            headerWrap.style.display = 'none';
+        });
+        closeArt.addEventListener('click', function() {
+            article.classList.remove('article-active');
+            headerWrap.style.display = 'flex';
+        });
+        
+        
 
     let inpAddress = document.querySelector('.address-input'),
         inputAdd = document.querySelectorAll('.slider__two-inputs'),

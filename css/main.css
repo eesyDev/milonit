@@ -2886,6 +2886,9 @@ section {
 .overlay {
     display: none;
 }
+.overlay-art {
+    display: none;
+}
 @keyframes animation-fade {
     0% {
         opacity: 0;
