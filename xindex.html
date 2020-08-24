@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
 </head>
 <body>
 	<header class="header">
+		<div class="overlay"></div>
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__nav">
@@ -40,10 +41,10 @@
 								<a class="green" href="#">for wholesalers</a>
 							</li>
 							<li class="nav__wrapper--link">
-								<a class="green" href="#">news</a>
+								<a class="green" href="#">News</a>
 							</li>
 							<li class="nav__wrapper--link">
-								<a class="green" href="#">contacts</a>
+								<a class="green" href="#">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -63,8 +64,8 @@
 					<span class="header__burger--item"></span>
 				</div>
 				<div class="header__cart">
-					<a class="header__cart--link" href="#">
-						<img src="images/card.png" alt="">
+					<a href="#" class="header__cart--link" id="basket-btn">
+						<img src="images/card.png" alt="icon">
 						<span class="header__cart--link-count">1</span>
 					</a>
 				</div>
@@ -82,21 +83,21 @@
 					</div>
 					<div class="preview__items">
 						<div class="preview__item">
-							<img class="preview__item-icon" src="images/preview-item1.png" alt="натуральная глина">
-							<div class="preview__item-text">natural</div>
+							<img class="preview__item-icon" src="images/preview-item1.png" alt="icon">
+							<div class="preview__item-text">Natural</div>
 						</div>
 						<div class="preview__item">
-							<img class="preview__item-icon" src="images/preview-item2.png" alt="уникальная глина">
-							<div class="preview__item-text">unique</div>
+							<img class="preview__item-icon" src="images/preview-item2.png" alt="icon">
+							<div class="preview__item-text">Unique</div>
 						</div>
 						<div class="preview__item">
-							<img class="preview__item-icon" src="images/preview-item3.png" alt="экологичная глина">
+							<img class="preview__item-icon" src="images/preview-item3.png" alt="icon">
 							<div class="preview__item-text">eco-friendly</div>
 						</div>
 					</div>
 				</div>
 				<div class="preview__product">
-					<img class="preview__product-img" src="images/product.png" alt="фото глины">
+					<img class="preview__product-img" src="images/product.png" alt="clay-image">
 					<div class="preview__product-info">
 						<p class="preview__product-price"><span class="preview__product-price-numb">1600</span><span
 								class="preview__product-price-val">rub.</span></p>
@@ -106,9 +107,9 @@
 							<button class="preview__product-plus">+</button>
 						</div>
 						<div class="preview__product-button-wrapper button-wrapper">
-							<a href="#popup" class="popup-link preview__product-button button">
-								buy
-							</a>
+							<button id="buy-1-btn" class="preview__product-button button">
+								Buy
+							</button>
 						</div>
 					</div>
 				</div>
@@ -116,28 +117,30 @@
 		</div>
 	</section>
 
-
-	<div id="popup" class="mfp-hide popup">
-		<div class="slider">
+	<div class="content-forms">
+		<div id="overlay" class="form-1">
+			<div class="close">
+				+
+			</div>
 			<div class="slider-item slider-buy">
 				<div class="slider__buy-wrapper">
 					<div class="slider__buy-left">
 						<div class="slider__buy-items">
 							<div class="preview__item slider__buy-item">
-								<img src="images/buy-items-one.svg" alt="">
+								<img src="images/buy-items-one.svg" alt="icon">
 								<div class="preview__item-text buy__items-text">natural</div>
 							</div>
 							<div class="preview__item slider__buy-item">
-								<img src="images/buy-items-two.svg" alt="">
+								<img src="images/buy-items-two.svg" alt="icon">
 								<div class="preview__item-text buy__items-text">unique</div>
 							</div>
 							<div class="preview__item slider__buy-item">
-								<img src="images/buy-items-three.svg" alt="">
+								<img src="images/buy-items-three.svg" alt="icon">
 								<div class="preview__item-text buy__items-text">eco-friendly</div>
 							</div>
 						</div>
 						<div class="slider__buy-img">
-							<img src="images/slider-buy.png" alt="">
+							<img src="images/slider-buy.png" alt="image">
 						</div>
 					</div>
 					<div class="slider__buy-right">
@@ -146,12 +149,12 @@
 							<p class="slider__buy-text">with unique manufacturing process and consistency</p>
 						</div>
 						<div class="buy__right-inner bla">
-							<p class="buy__right-value">Capacity: <span>200 ml</span></p>
+							<p class="buy__right-value">Volume <span class="volume-clay">200 ml</span></p>
 							<div class="buy__right-quanity">
 								<div class="quanity__inner">
 									<div class="quanity__num">
-										<h4 class="quanity__num-title">Cantity</h4>
-										<p class="quanity__num-piece">1 piece</p>
+										<h4 class="quanity__num-title">Quantity</h4>
+										<p class="quanity__num-piece">1 pc</p>
 									</div>
 									<div class="plus__minus">
 										<button class="buy__minus buy__minus--disable">
@@ -170,108 +173,14 @@
 										<h4 class="sum__num-title">Sum</h4>
 										<p class="sum__num-rub">1600 rub.</p>
 									</div>
-									<button class="sum__num-btn button">
-										Buy
-									</button>
+									<button id="buy-2-btn" class="buy-second-btn button">
+										<a href="#popup" class="popup-link">
+											Buy
+										</a>	
+									</button>							
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slider-item slider-item-two">
-				<div class="slider__two-wrapper">
-					<div class="slider__two-top">
-						<h4 class="slider__two-title">Ordering</h4>
-						<p class="slider__two-step">Step 1</p>
-					</div>
-					<div class="slider__two-name">
-						<p>Personal data</p>
-						<form class="first__buy-inputs">
-							<input class="slider__two-inputs your_name" placeholder="Ваше имя" type="text">
-							<input class="slider__two-inputs your_sername" placeholder="Ваша фамилия" type="text">
-						</form>
-					</div>
-					<div class="slider__two-contacts">
-						<p>Contact details</p>
-						<form class="second__buy-inputs">
-							<input class="slider__two-inputs your_index" placeholder="Индекс" type="text">
-							<input class="slider__two-inputs your_sity" placeholder="Город" type="text">
-							<input class="slider__two-inputs your_street" placeholder="Улица" type="text">
-						</form>
-						<form class="third__buy-inputs">
-							<div class="first__three-inputs">
-								<input class="slider__two-inputs your_house" placeholder="Дом" type="text">
-								<input class="slider__two-inputs your_housing" placeholder="Корпус" type="text">
-								<input class="slider__two-inputs your_flat" placeholder="Квартира" type="text">
-							</div>
-							<div class="last__two-inputs">
-								<input class="slider__two-inputs your_tel" id="phone" name="phone"
-									placeholder="+7 (___)___-__-__" type="tel">
-								<input class="slider__two-inputs your_email" placeholder="Ваш E-mail" type="text">
-							</div>
-						</form>
-					</div>
-					<div class="slider__dots">
-						<p class="slider__dots-active">01<span class="slider__dots-inactive"><small
-									style="font-weight: 300; font-size: 20px;">/</small>02</span></p>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="slider-item slider-item-three">
-				<button class="send__money button">
-					Pay
-				</button>
-				<div class="slider__three-wrapper">
-					<div class="slider__three-top">
-						<h4 class="slider__three-title">Ordering</h4>
-						<p class="slider__three-step">Step 2</p>
-					</div>
-					<div class="slider__three-confirm">
-						<p>Confirmation of information</p>
-					</div>
-					<div class="slider__three-info">
-						<div class="info__name">
-							<img class="info__img" src="images/buy-person.svg" alt="">
-							<p>Full name: </p>
-							<span>John Smith</span>
-						</div>
-						<div class="info__address">
-							<img class="info__img" src="images/buy-map.svg" alt="">
-							<p>Delivery address: </p>
-							<span>505050, Moscow, Lenin str 23/5, ap. 155</span>
-						</div>
-						<div class="info__tel">
-							<img class="info__img" src="images/buy-tel.svg" alt="">
-							<p>Phone number: </p>
-							<span>+7 (900) 444 - 54 - 45</span>
-						</div>
-						<div class="info__email">
-							<img class="info__img" src="images/buy-email.svg" alt="">
-							<p>E-mail: </p>
-							<span>milonitockka14@gmail.com</span>
-						</div>
-					</div>
-					<div class="slider__three-delivery">
-						<p>Delivery</p>
-					</div>
-					<div class="slider__three-variants">
-						<button class="variant variant__item-one">
-							<p>Post of Russia - <span>10-14 days, </span>300 rub.</p>
-						</button>
-						<button class="variant variant__item-two">
-							<p>CDEK - <span>7-10 days, </span>450 rub.</p>
-						</button>
-						<button class="variant variant__item-three">
-							<p>Express delivery - <span>4-7 days, </span>650 rub.</p>
-						</button>
-					</div>
-					<div class="slider__dots slider__dots-three">
-						<p class="slider__dots-active">02<span class="slider__dots-inactive"><small
-									style="font-weight: 300; font-size: 20px;">/</small>02</span></p>
 					</div>
 				</div>
 			</div>
@@ -279,6 +188,143 @@
 	</div>
 
 
+	<div id="popup" class="mfp-hide popup">
+		<div class="slider">
+			<div class="slider-item slider-item-two">
+				<div class="slider__two-wrapper">
+					<div class="slider__two-top">
+						<h4 class="slider__two-title">Ordering</h4>
+						<p class="slider__two-step">Step 1</p>
+					</div>
+					<div class="slider__two-name" id="first-form">
+						<p>Personal data</p>
+						<form class="first__buy-inputs">
+							<input class="slider__two-inputs your_name" placeholder="Your name" type="text" name="name" >
+							<input class="slider__two-inputs your_sername" placeholder="Your surname" type="text" name="surname">
+						</form>
+					</div>
+					<div class="slider__two-contacts" id="second-form">
+						<p>Contact details</p>
+						<form class="second__buy-inputs">
+							<input class="slider__two-inputs your_index" placeholder="Index" type="text" name="index">
+							<input class="slider__two-inputs your_sity" placeholder="City" type="text" name="city">
+							<input class="slider__two-inputs your_street" placeholder="Street" type="text" name="street">
+						</form>
+						<div class="third-form" id="third-form">
+							<form class="third__buy-inputs" >
+								<div class="first__three-inputs">
+									<input class="slider__two-inputs your_house" placeholder="House" type="text">
+									<input class="slider__two-inputs your_housing" placeholder="Housing" type="text">
+									<input class="slider__two-inputs your_flat" placeholder="Apartment" type="number">
+								</div>
+								<div class="last__two-inputs">
+									<input class="slider__two-inputs your_tel" id="phone" name="phone"
+									 placeholder="+7 (___)___-__-__" type="number">
+									<input class="slider__two-inputs your_email" placeholder="Your E-mail" type="email" name="email">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="slider__dots">
+						<p class="slider__dots-active">01<span class="slider__dots-inactive"><small
+									style="font-weight: 300; font-size: 20px;">/</small>03</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item slider-item-three">
+				<div class="slider__three-wrapper">
+					<div class="slider__three-top">
+						<h4 class="slider__three-title">Ordering</h4>
+						<p class="slider__three-step">Шаг 2</p>
+					</div>
+					<div class="slider__three-confirm">
+						<p>Confirmation of information</p>
+					</div>
+					<div class="slider__three-info">
+						<div class="info__name">
+							<img class="info__img" src="images/buy-person.svg" alt="">
+							<p>Full name:</p>
+							<span class="name-input">John Smith</span>
+						</div>
+						<div class="info__address">
+							<img class="info__img" src="images/buy-map.svg" alt="">
+							<p>Delivery address: </p>
+							<span class="address-input">505050, Moscow, Lenin str 23/5, ap. 155</span>
+						</div>
+						<div class="info__tel">
+							<img class="info__img" src="images/buy-tel.svg" alt="">
+							<p>Phone number: </p>
+							<span class="phone-input">+7 (900) 444 - 54 - 45</span>
+						</div>
+						<div class="info__email">
+							<img class="info__img" src="images/buy-email.svg" alt="">
+							<p>E-mail: </p>
+							<span class="mail-input">milonitockka14@gmail.com</span>
+						</div>
+					</div>
+					<div class="slider__three-delivery">
+						<p>Delivery</p>
+					</div>
+					<form class="slider__three-variants">
+						<div class="variant variant__item-one">
+							<input type="radio" name="radio" id="radio-1" value="1" checked>
+							<label for="radio-1">Post of Russia 10-14 days, 300 rub.</label>
+						</div> 
+						<div class="variant variant__item-two">
+							<input type="radio" name="radio" id="radio-2" value="2">
+							<label for="radio-2">CDEK - 7-10 days, 450 rub.</label>
+						</div>
+						<div class="variant variant__item-three">
+							<input type="radio" name="radio" id="radio-3" value="3">
+							<label for="radio-3">Express delivery - 4-7 days, 650 rub..</label>
+						</div>
+					</form>
+					<div class="slider__dots slider__dots-three">
+						<p class="slider__dots-active">02<span class="slider__dots-inactive"><small
+									style="font-weight: 300; font-size: 20px;">/</small>03</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item slider-item-four">
+				<button class="send__money button">
+					Pay
+				</button>
+				<div class="slider__three-wrapper">
+					<div class="slider__three-top">
+						<h4 class="slider__three-title">Ordering</h4>
+						<p class="slider__three-step">Шаг 3</p>
+					</div>
+					<div class="slider__three-confirm slider__four-confirm">
+						<p>Payment</p>
+					</div>
+					<div class="slider__four-wr">
+						<img src="images/credit-card.png" alt="image" class="slider__four-img">
+						<div class="slider__four-info">
+							<img src="images/cream.png" alt="image" class="slider__four-info-img">
+							<div class="slider__four-info-cost">Sum <div></div> <div class="validate-value">1600<span>Rub.</span></div></div>
+							<div class="slider__four-info-cost">Доставка <div></div> <div class="deliv-sum">450<span>Rub.</span></div></div>
+							<hr class="slider__four-info-line">
+							<div class="slider__four-info-cost">Total <div></div> <div class="full-sum">2050<span>Rub.</span></div></div>
+							<div class="slider__four-info-pol">
+								<img src="images/zamok.svg" alt="icon">
+								<div>By submiting the form I consent to the processing of my personal data and receiving SMS mailing</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__dots slider__dots-three">
+						<p class="slider__dots-active">03<span class="slider__dots-inactive"><small
+									style="font-weight: 300; font-size: 20px;">/</small>03</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div id="popup" class="mfp-hide popup">
+				
+			</div>
+		</div>
+	</div>
 
 
 	<section class="about-us">
@@ -487,9 +533,10 @@
 						</div>
 					</div>
 				</div>
-				<img src="./images/huinya-1.png" alt="" class="about-us__bubles--help-img help-img-1">
-				<img src="./images/huinya-2.png" alt="" class="about-us__bubles--help-img help-img-2">
-				<img src="./images/huinya-3.png" alt="" class="about-us__bubles--help-img help-img-3">
+				<img src="./images/huinya-1.png" alt="item" class="about-us__bubles--help-img help-img-1">
+				<img src="./images/huinya-2.png" alt="item" class="about-us__bubles--help-img help-img-2">
+				<img src="./images/huinya-3.png" alt="item" class="about-us__bubles--help-img help-img-3">
+				<img src="./images/huinya-2.png" alt="item" class="about-us__bubles--help-img help-img-4">
 			</div>
 		</div>
 	</section>
@@ -549,7 +596,7 @@
 					</div>
 				</div>
 				<div class="application__wrapper--button">
-					<button class="button application__wrapper--button-style">Order a consultation</button>
+					<button class="button application__wrapper--button-style">>Order a consultation</button>
 				</div>
 			</div>
 		</div>
@@ -563,26 +610,24 @@
 				<div class="facts__items">
 					<img src="./images/glina-desc.png" alt="" class="facts__item-glina">
 					<div class="facts__texts">
-						<div class="facts__item-text facts__item-text--1 facts__item-text--active eng_facts_itemtext_1">Back in ancient Rome 
+						<div class="facts__item-text facts__item-text--1 facts__item-text--active">Back in ancient Rome 
 							<span>clay used to wash dirty woolen clothes </span>
 							due to its ability to absorb and neutralize various substances. Moreover, the list of these substances for
                             The past centuries have expanded, ranging from ordinary fat particles to a whole spectrum of heavy metals.
 						</div>
 
-						<div class="facts__item-text facts__item-text--2 eng_facts_itemtext_2">Due to its unique properties, <span> clay has been used and for making cloth, and in winemaking </span>, and at the beginning of the 19th century, industrialists began to produce for sale not only expensive soap, but
+						<div class="facts__item-text facts__item-text--2">Due to its unique properties, <span> clay has been used and for making cloth, and in winemaking </span>, and at the beginning of the 19th century, industrialists began to produce for sale not only expensive soap, but
                             and dental
                             clay powder that helps to reduce bleeding gums and remove yellow plaque.
-                        </div>
-                        
+						</div>
 						<div class="facts__item-text facts__item-text--3">In folk medicine <span>  bentonite is used as compresses with diseases joints, skin diseases</span>... Clay contains almost all the elements of the periodic table, but it is in
                             those
                             quantities that are useful to the body, it seems to provide a living being with a full set of these valuable
                             elements, including such important elements as magnesium, calcium, potassium, nitrogen, iron, phosphate, silica, and in
                             the most beneficial combinations for the body, and the body "chooses" exactly what it needs today. Hence,
                             it can be used to restore the body after severe injuries, fractures, vitamin deficiency, burns. "
-                        </div>
-                        
-						<div class="facts__item-text facts__item-text--4 eng_facts_itemtext_4">In modern cosmetology, such clay <span>used in as hot compress, cosmetic masks or baths </span>. It is also added to various cosmetics. If a small handful is poured into a bath of water, mix, and then immerse in this "clay" water for
+						</div>
+						<div class="facts__item-text facts__item-text--4">In modern cosmetology, such clay <span>used in as hot compress, cosmetic masks or baths </span>. It is also added to various cosmetics. If a small handful is poured into a bath of water, mix, and then immerse in this "clay" water for
                             for some time, the human body will receive a good portion of trace elements, the skin will become velvety. it
                             will help well in the fight against acne and various rashes. There is even such a term - clay therapy, then
                             there is a clay treatment. Bentonite removes all the toxins present in the body and also provides it
@@ -590,24 +635,23 @@
 						</div>
 					</div>
 					<button class="facts__item facts__item-1 ">
-						<img class="facts__item-numb" src="./images/1green.png" alt="">
-						<img class="facts__item-circle" src="./images/circle.png" alt="">
-
+						<img class="facts__item-numb" src="./images/1green.png" alt="icon">
+						<img class="facts__item-circle" src="./images/circle.png" alt="icon">
 					</button>
+					
 					<button class="facts__item facts__item-2">
-						<img class="facts__item-circle" src="./images/circle.png" alt="">
-						<img class="facts__item-numb" src="./images/2green.png" alt="">
-
+						<img class="facts__item-circle" src="./images/circle.png" alt="icon">
+						<img class="facts__item-numb" src="./images/2green.png" alt="icon">	
 					</button>
+
 					<button class="facts__item facts__item-3">
-						<img class="facts__item-numb" src="./images/3green.png" alt="">
-						<img class="facts__item-circle" src="./images/circle.png" alt="">
-
+						<img class="facts__item-numb" src="./images/3green.png" alt="icon">
+						<img class="facts__item-circle" src="./images/circle.png" alt="icon">
 					</button>
-					<button class="facts__item facts__item-4">
-						<img class="facts__item-numb" src="./images/4green.png" alt="">
-						<img class="facts__item-circle" src="./images/circle.png" alt="">
 
+					<button class="facts__item facts__item-4">
+						<img class="facts__item-numb" src="./images/4green.png" alt="icon">
+						<img class="facts__item-circle" src="./images/circle.png" alt="icon">
 					</button>
 				</div>
 			</div>
@@ -639,16 +683,16 @@
 			<div class="opt__inner">
 				<div class="opt__numb numb">For wholesalers</div>
 				<div class="opt__content">
-					<h2 class="opt__title eng_opt_title">Offer for wholesale buyers</h2>
-					<div class="opt__subtitle eng_opt_sub">The company "MILONIT" <br><span> with pleasure </span>  cooperates with wholesale buyers</div>
-					<div class="opt__text">Our company provides discounts on wholesale trade to both legal entities and individuals and applies to all types of goods. We are always ready to discuss individual working conditions with each client.</div>
+					<h2 class="opt__title">>Offer for wholesale buyers</h2>
+					<div class="opt__subtitle">The company "MILONIT"<br><span> with pleasure</span> cooperates with wholesale buyers</div>
+					<div class="opt__text">>Our company provides discounts on wholesale trade to both legal entities and individuals and applies to all types of goods. We are always ready to discuss individual working conditions with each client.</div>
 					<div class="button opt__button-wrapper">
 						<button class="opt__button button">get price and special conditions</button>
 					</div>
 				</div>
 				<img class="opt__bg-img" src="./images/milonit.png" alt="">
 				<img class="opt__bg-img--bg" src="./images/circle-bg.png" alt="">
-				<img class="opt__bg-img--blure eng_opt_blure" src="./images/circle-blur.png" alt="">
+				<img class="opt__bg-img--blure" src="./images/circle-blur.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -686,9 +730,42 @@
 						<img src="images/review-item3.jpg" alt="item" class="review__item-img">
 					</div>
 				</div>
+
+				<div class="review__slider">
+					<div class="review__item">
+						<a href="#" class="review__item-social review__item-social--inst"></a>
+						<img src="images/review-item1.jpg" alt="item" class="review__item-img">
+					</div>
+					<div class="review__item"><a href="#" class="review__item-link">
+						<a href="#" class="review__item-social review__item-social--inst"></a>
+						<img src="images/review-item2.jpg" alt="item" class="review__item-img">
+					</div>
+					<div class="review__item">
+						<a href="#" class="review__item-social review__item-social--inst"></a>
+						<img src="images/review-item3.jpg" alt="item" class="review__item-img">
+					</div>
+					<div class="review__item">
+						<a href="#" class="review__item-social review__item-social--inst"></a>
+						<img src="images/review-item1.jpg" alt="item" class="review__item-img">
+					</div>
+					<div class="review__item"><a href="#" class="review__item-link">
+						<a href="#" class="review__item-social review__item-social--inst"></a>
+						<img src="images/review-item2.jpg" alt="item" class="review__item-img">
+					</div>
+					<div class="review__item">
+						<a href="#" class="review__item-social review__item-social--inst"></a>
+						<img src="images/review-item3.jpg" alt="item" class="review__item-img">
+					</div>
+				</div>
+
+				<a class="review__modal review__modal-active">Video presentation</a>
 			</div>
 		</div>
 	</section>
+
+	<article class="insta" style="display: none;">
+		<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BzePjYplbTI/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BzePjYplbTI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Посмотреть эту публикацию в Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BzePjYplbTI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">By Iskander Utebayev (@bat.not.bad)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-07-03T23:11:16+00:00">3 Июл 2019 в 4:11 PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+	</article>
 
 	<section class="contacts">
 		<div class="container">
@@ -702,7 +779,7 @@
 						<form action="" class="contacts__buble-form">
 							<div class="contacts__buble-form-wrapper">
 								<label class="user-icon">
-									<input type="text" class="contacts__buble-input" placeholder="Put your name..."
+									<input type="text" class="contacts__buble-input" placeholder="Введите Ваше имя"
 										size="25">
 								</label>
 							</div>
@@ -710,13 +787,13 @@
 
 								<label class="telephone-icon">
 									<input type="text" class="contacts__buble-input"
-										placeholder="Put your phone..." size="25">
+										placeholder="Введите Ваш номер телефона" size="25">
 								</label>
 							</div>
 							<div class="button-wrapper">
 								<button class="contacts__buble-button button">Send request</button>
 							</div>
-							<div class="contacts__buble-warning eng_buble_warn">
+							<div class="contacts__buble-warning">
 								By submitting the form, I consent to the processing of my personal data and the receipt of SMS mailing
 							</div>
 						</form>
@@ -731,7 +808,7 @@
 							</div>
 						</div>
 						<div class="contacts__item">
-							<div class="contacts__item-title">E-mail</div>
+							<div class="contacts__item-title">e-mail</div>
 							<div class="contacts__item-info">
 								<div class="contacts__item-context">milonit@gmail.com</div>
 								<div class="contacts__item-text">We will reply as soon as possible!</div>
@@ -755,21 +832,14 @@
 			<div class="contacts__buble-subtitle mb-1">Leave a request and our manager will contact you and answer all questions </div>
 			<img src="./images/nice.png" class="popup__tel--img" alt="item">
 			<form action="" class="contacts__buble-form">
-				<div class="contacts__buble-form-wrapper mb-1">
-                    <label class="user-icon">
-                        <input type="text" class="contacts__buble-input popup__tel--input" placeholder="Put your name..." size="25">
-                    </label>
-                </div>
-				<div class="contacts__buble-form-wrapper mb-1">
-                    <label class="telephone-icon">
-                        <input type="text" class="contacts__buble-input popup__tel--input" placeholder="Put your phone..."
-                            size="25">
-                    </label>
-                </div>
-				<div class="button-wrapper">
-                    <button class="button popup__tel--button">Send request</button>
-                </div>
-				<div class="contacts__buble-warning p-40"> By submitting the form, I consent to the processing of my personal data and the receipt of SMS mailing </div>
+				<div class="contacts__buble-form-wrapper mb-1"> <label class="user-icon"> <input type="text"
+							class="contacts__buble-input popup__tel--input" placeholder="Put your name..." size="25">
+					</label> </div>
+				<div class="contacts__buble-form-wrapper mb-1"> <label class="telephone-icon"> <input type="text"
+							class="contacts__buble-input popup__tel--input" placeholder="Put your phone..."
+							size="25"> </label> </div>
+				<div class="button-wrapper"> <button class="button popup__tel--button">Send request</button> </div>
+				<div class="contacts__buble-warning p-40">  By submitting the form, I consent to the processing of my personal data and the receipt of SMS mailing </div>
 			</form>
 		</div>
 		<div class="popup__buy hide"> </div>
@@ -810,8 +880,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
 	<script src="js/mainES6.min.js"></script>
-	<script src="js/main.min.js"></script>
 </body>
 </html>
