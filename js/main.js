@@ -7,6 +7,7 @@ $(document).ready(function () {
                     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.png" alt=""><span>назад</span></button>',
                     nextArrow: '<button class="slick-arrow slick-next"><span>вперед</span><img src="images/buy-arrow-right.png" alt=""></button>',
                     dots: false,
+                    infinite: false,
                     adaptiveHeight: true
                 });
                 var current_article = $('.slider').slick('slickCurrentSlide');
@@ -23,7 +24,7 @@ $(document).ready(function () {
                     }else{
                        $('.slick-prev').show();
                     }
-                    if (current_article==total_articles-2){
+                    if (current_article==total_articles-1){
                         $('.slick-next').hide();
                     }else{
                         $('.slick-next').show();
