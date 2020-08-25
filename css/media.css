@@ -3090,6 +3090,12 @@
     .header__burger--item::after {
         top: -6px;
     }
+    .header__nav--call .header__nav--call-button {
+        margin-bottom: 20px;
+    }
+    .header__nav--tel .header__nav--tel-small {
+        margin-bottom: 10px;
+    }
     .preview {
         height: 930px;
         min-height: 870px;
@@ -3204,6 +3210,7 @@
     }
     .opt__button-wrapper button {
         padding: 17px 15px;
+        font-size: 10px;
     }
     .opt__bg-img {
         display: none
@@ -3282,8 +3289,8 @@
         right: 30px;
     }
     .menu-active .header__nav .nav__wrapper {
-        width: 230px;
-        height: 230px;
+        width: 200px;
+        height: 200px;
     }
     .menu-active .header__burger {
         right: 5%;
@@ -3292,7 +3299,7 @@
         left: -10px;
     }
     .popup__wrapper .popup__tel--title {
-        margin: 70px 0 0;
+        margin: 10px 0 0;
     }
     .preview__item+.preview__item {
         margin-left: 17px;
