@@ -618,7 +618,7 @@
     .slider-buy {
         width: 1025px;
         height: 620px;
-        top: 345px;
+        top: 280px;
     }
     .buy__right-inner {
         padding-top: 125px;
@@ -3210,7 +3210,7 @@
     }
     .opt__button-wrapper button {
         padding: 17px 15px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .opt__bg-img {
         display: none
