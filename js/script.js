@@ -24,7 +24,7 @@ $(document).ready(function () {
                     }else{
                        $('.slick-prev').show();
                     }
-                    if (current_article==total_articles-2){
+                    if (current_article==total_articles-1){
                         $('.slick-next').hide();
                     }else{
                         $('.slick-next').show();
