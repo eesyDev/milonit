@@ -8,6 +8,13 @@ $(document).ready(function () {
                     nextArrow: '<button class="slick-arrow slick-next"><span>forward</span><img src="images/buy-arrow-right.png" alt=""></button>',
                     dots: false,
                     infinite: false,
+                    adaptiveHeight: true,
+                    responsive: [{
+                        breakpoint: 599,
+                        settings: {
+                            arrows: false
+                        }
+                    }]
                 });
                 var current_article = $('.slider').slick('slickCurrentSlide');
                 var total_articles = $('.slider').slideCount;
