@@ -217,7 +217,8 @@ section {
 }
 
 .header__nav .nav__wrapper--link a {
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .header__nav--tel {
@@ -447,7 +448,7 @@ section {
     position: absolute;
     display: flex;
     width: 85%;
-    min-height: 455px;
+    min-height: 480px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -5%);
@@ -493,7 +494,9 @@ section {
 
 .menu-active .header__nav--call,
 .menu-active .header__nav--tel {
-    display: flex
+    display: flex;
+    position: relative;
+    top: -30px;
 }
 
 .menu-active .header__nav--logo {
@@ -2843,7 +2846,8 @@ section {
 
 
 .popup__wrapper .popup__tel--button {
-    padding: 17px 90px
+    padding: 17px 42px;
+    font-size: 14px;
 }
 
 .hide {
