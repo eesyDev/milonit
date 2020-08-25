@@ -2646,7 +2646,7 @@
     }
     .slider__four-info-cost, .slider__four-info-pol {
         width: 300px;
-        margin: 0 auto;
+        margin: 25px auto 0;
     }
     .slider__four-info-pol img {
         width: 70px;
@@ -3074,7 +3074,7 @@
         width: 350px;
     }
     .close {
-        top: 10%;
+        top: 15%;
         right: 3%;
     }
     .slider__dots-three {
@@ -3225,7 +3225,7 @@
     }
     .facts__item-4 {
         top: 961px;
-        left: 160px;
+        left: 120px;
         height: 140px;
     }
     .facts__item-text--1, .facts__item-text--2, .facts__item-text--3, .facts__item-text--4 {
