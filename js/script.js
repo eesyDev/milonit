@@ -4,17 +4,10 @@ $(document).ready(function () {
             open: function () {
                 $('.slider').slick({
                     arrows: true,
-                    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.png" alt=""><span>назад</span></button>',
-                    nextArrow: '<button class="slick-arrow slick-next"><span>вперед</span><img src="images/buy-arrow-right.png" alt=""></button>',
+                    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.png" alt=""><span>back</span></button>',
+                    nextArrow: '<button class="slick-arrow slick-next"><span>forward</span><img src="images/buy-arrow-right.png" alt=""></button>',
                     dots: false,
                     infinite: false,
-                    adaptiveHeight: true,
-                    responsive: [{
-                        breakpoint: 599,
-                        settings: {
-                            arrows: false
-                        }
-                    }]
                 });
                 var current_article = $('.slider').slick('slickCurrentSlide');
                 var total_articles = $('.slider').slideCount;
@@ -133,10 +126,10 @@ window.addEventListener('DOMContentLoaded', function() {
     let sumBuy;
     buyPlus.addEventListener('click', function() {
         buyQuant.innerHTML = ++quantity;
-        quantVal.innerHTML = quantity + ' шт';
-        buySum.innerHTML = price * quantity + ' руб';
-        volume.innerHTML = curVolume * quantity + 'мл';
-        validSum.textContent = price * quantity + ' руб';             
+        quantVal.innerHTML = quantity + ' pc';
+        buySum.innerHTML = price * quantity + ' rub';
+        volume.innerHTML = curVolume * quantity + ' ml';
+        validSum.textContent = price * quantity + ' rub';            
         if (quantity > 1) {
             buyMinus.classList.remove('buy__minus--disable');
         }
@@ -145,14 +138,14 @@ window.addEventListener('DOMContentLoaded', function() {
     buyMinus.addEventListener('click', function() {
         if (quantity < 2) {
             buyMinus.classList.add('buy__minus--disable');
-            buySum.innerHTML = price + ' руб';
+            buySum.innerHTML = price + ' rub';
             buyQuant.innerHTML = quantity;
-            volume.innerHTML = curVolume + 'мл';
+            volume.innerHTML = curVolume + 'ml';
         } else {
             buyQuant.innerHTML = --quantity;
-            quantVal.innerHTML = quantity + ' шт';
-            buySum.innerHTML = price * quantity + ' руб';
-            volume.innerHTML = curVolume * quantity + 'мл';
+            quantVal.innerHTML = quantity + ' pc';
+            buySum.innerHTML = price * quantity + ' rub';
+            volume.innerHTML = curVolume * quantity + 'ml';
         }
     });
 
@@ -160,16 +153,16 @@ window.addEventListener('DOMContentLoaded', function() {
         let elements = document.getElementsByName('radio');
         for (let i = 0; i < elements.length; i++) {
             elements[0].addEventListener('click', function() {
-                delivSum.textContent = 300 + ' руб';
-                fullSum.textContent = parseFloat(validSum.textContent) + 300 + ' руб';
+                delivSum.textContent = 300 + ' rub';
+                fullSum.textContent = parseFloat(validSum.textContent) + 300 + ' rub';
             });
             elements[1].addEventListener('click', function() {
-                delivSum.textContent = 450 + ' руб';
-                fullSum.textContent = parseFloat(validSum.textContent) + 450 + ' руб';
+                delivSum.textContent = 450 + ' rub';
+                fullSum.textContent = parseFloat(validSum.textContent) + 450 + ' rub';
             });
             elements[2].addEventListener('click', function() {
-                delivSum.textContent = 650 + ' руб';
-                fullSum.textContent = parseFloat(validSum.textContent) + 650 + ' руб';
+                delivSum.textContent = 650 + ' rub';
+                fullSum.textContent = parseFloat(validSum.textContent) + 650 + ' rub';
             })
         }
     }
@@ -214,7 +207,7 @@ window.addEventListener('DOMContentLoaded', function() {
         },
         messages: {
             name: {
-                required: "Пожалуйста введите имя",
+                required: "Please, put your name",
                 minlength: jQuery.validator.format("At least {0} characters required!")
             }
         }
@@ -232,14 +225,15 @@ window.addEventListener('DOMContentLoaded', function() {
         },
         messages: {
             phone: {
-                required: "Введите номер телефона"
+                required: "Put your phone"
             },
             email: {
-                required: "Пожалуйста введите свою почту",
-                email: "Неправильно введен адрес"
+                required: "Put your e-mail",
+                email: "Incorrect address"
             }
         }
     });
+
     let videoBtn = document.querySelector('.review__modal'),
         closeArt = document.querySelector('.close-art'),
         overlayArt = document.querySelector('.overlay-art'),
@@ -253,8 +247,6 @@ window.addEventListener('DOMContentLoaded', function() {
             article.classList.remove('article-active');
             headerWrap.style.display = 'flex';
         });
-        
-        
 
     let inpAddress = document.querySelector('.address-input'),
         inputAdd = document.querySelectorAll('.slider__two-inputs'),
@@ -275,7 +267,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function(){
     $('.review__slider').slick({
-        arrows: false,
+        arrows: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,

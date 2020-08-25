@@ -573,7 +573,7 @@
         max-width: 305px;
         font-size: 12px;
         line-height: 18px;
-        margin-bottom: 35px;
+        margin-bottom: 55px;
     }
     .contacts__buble-input {
         padding: 7px 28px 7px 55px;
@@ -647,6 +647,12 @@
     }
     .slider__buy-items {
         padding-bottom: 110px;
+    }
+    .popup__tel--img {
+        display: none;
+    }
+    .contacts__buble-form .button-wrapper {
+        width: 282px;
     }
 }
 
@@ -1413,10 +1419,11 @@
         line-height: 23px;
         font-size: 16px;
         margin-bottom: 1rem;
-        max-width: 380px
+        max-width: 380px;
+        margin-top: 55px;
     }
     .contacts__buble-form {
-        margin-bottom: 50px
+        margin-bottom: 85px;
     }
     .contacts__buble-input {
         height: 60px;
@@ -1894,6 +1901,22 @@
     .send__money {
         padding: 17px 45px;
         width: 175px;
+    }
+    .contacts__buble-form .button-wrapper {
+        width: 200px;
+    }
+    .contacts__buble-form .button-wrapper button {
+        width: 100%;
+    }
+    .popup__wrapper .popup__tel--button {
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    .contacts__buble-subtitle {
+        margin-top: 15px;
+        text-align: center;
     }
 }
 
@@ -3305,6 +3328,19 @@
     }
     .send__money {
         right: 30px;
+    }
+    .menu-active .header__nav .nav__wrapper {
+        width: 230px;
+        height: 230px;
+    }
+    .menu-active .header__burger {
+        right: 5%;
+    }
+    .menu-active .header__burger--item {
+        left: -10px;
+    }
+    .popup__wrapper .popup__tel--title {
+        margin: 70px 0 0;
     }
 }
 @media (max-width: 340px){

@@ -179,6 +179,44 @@ div {
     text-transform: uppercase;
     color: #3E767B;
 }
+.article {
+    display: none;
+    position: relative;
+}
+.article-disable {
+    display: none;
+}
+.article-active {
+    display: block;
+}
+.article-active .overlay-art {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .9);
+}
+.insta {
+    z-index: 10;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+}
+.close-art {
+    transform: rotate(45deg);
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: -200px;
+    right: 350px;
+    z-index: 999;
+    cursor: pointer;
+}
 
 .plus__minus-num {
     font-family: Rubik;

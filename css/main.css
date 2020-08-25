@@ -203,7 +203,8 @@ section {
 
 .header__nav--wrapper {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .header__nav .nav__wrapper {
@@ -423,7 +424,9 @@ section {
     left: -15px
 }
 .menu-active .header__burger {
-    top: -55px;
+    top: -20px;
+    right: -3%;
+    z-index: 15;
 }
 
 .menu-active .header__burger--item::after {
@@ -442,8 +445,10 @@ section {
     position: absolute;
     display: flex;
     width: 85%;
-    min-height: 400px;
-    top: 20px;
+    min-height: 540px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
     z-index: 10;
     flex-direction: column
 }
@@ -469,12 +474,15 @@ section {
 }
 
 .menu-active .header__nav .nav__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background: #fff;
     padding: 10px;
     border-radius: 50%;
-    width: 170px;
-    height: 170px
+    width: 260px;
+    height: 260px
 }
 
 .menu-active .header__nav .nav__wrapper--link {
@@ -504,6 +512,12 @@ section {
 
 .menu-active .header__nav--logo-text p {
     font-family: SegoeRegular, sans-serif
+}
+
+.popup__tel--img {
+    width: 20px;
+    height: 8px;
+    margin-bottom: 35px;
 }
 
 .preview {
@@ -2263,12 +2277,14 @@ section {
 .contacts__buble-form {
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    z-index: 7;
 }
 
 .contacts__buble-form-wrapper {
     position: relative;
-    margin-bottom: 23px
+    margin-bottom: 23px;
+    z-index: 8;
 }
 
 .contacts__buble-input {
@@ -2505,6 +2521,10 @@ section {
 .overlay {
     display: none;
 }
+.overlay-art {
+    display: none;
+}
+
 @-webkit-keyframes animation-fade {
     0% {
         opacity: 0;
@@ -2699,7 +2719,7 @@ section {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .8);
     z-index: 100;
     top: 0;
     left: 0;
@@ -2798,7 +2818,7 @@ section {
     top: 30px
 }
 
-@media screen and (max-width:750px) {
+@media (max-width:750px) {
     .popup__wrapper .popup__tel .closet-popup {
         top: -21%;
         left: 82%
@@ -2810,13 +2830,15 @@ section {
 
     .popup__wrapper .popup__tel--title {
         font-size: 20px;
-        margin: 0
+        margin: 100px 0 0
     }
 
     .popup__wrapper .popup__tel--input {
         padding: 7px 0 7px 40px
     }
+    
 }
+
 
 .popup__wrapper .popup__tel--button {
     padding: 17px 90px
