@@ -190,14 +190,21 @@ div {
     display: block;
 }
 .article-active .overlay-art {
-    display: block;
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, .9);
+    position: absolute;
+    left: 50%;
+    top: -410px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 765px;
+    height: 1130px;
+    border-radius: 35px;
+    margin: 0 auto;
+    background: linear-gradient(to top right, rgb(167, 201, 240), rgb(212, 216, 219) 50%, rgb(159, 116, 165));
+    border: 2px solid #212121;
+    box-shadow: 5px 5px 40px white
 }
 .insta {
     z-index: 10;
@@ -209,11 +216,11 @@ div {
 }
 .close-art {
     transform: rotate(45deg);
-    color: #fff;
+    color: #232323;
     font-size: 70px;
-    position: absolute;
-    top: -200px;
-    right: 350px;
+    position: relative;
+    top: -515px;
+    right: -340px;
     z-index: 999;
     cursor: pointer;
 }
