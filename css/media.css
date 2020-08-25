@@ -1424,7 +1424,7 @@
         margin-top: 55px;
     }
     .contacts__buble-form {
-        margin-bottom: 85px;
+        margin-bottom: 65px;
     }
     .contacts__buble-input {
         height: 60px;
@@ -1910,7 +1910,10 @@
         width: 100%;
     }
     .popup__wrapper .popup__tel--button {
-        padding: 10px 40px;
+        padding: 7px 40px;
+    }
+    .contacts__buble-form {
+        margin-bottom: 130px;
     }
 }
 
@@ -3296,7 +3299,7 @@
         right: 5%;
     }
     .menu-active .header__burger--item {
-        left: -10px;
+        left: 5px;
     }
     .popup__wrapper .popup__tel--title {
         margin: 10px 0 0;
