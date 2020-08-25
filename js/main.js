@@ -7,14 +7,7 @@ $(document).ready(function () {
                     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.png" alt=""><span>назад</span></button>',
                     nextArrow: '<button class="slick-arrow slick-next"><span>вперед</span><img src="images/buy-arrow-right.png" alt=""></button>',
                     dots: false,
-                    infinite: false,
-                    adaptiveHeight: true,
-                    responsive: [{
-                        breakpoint: 599,
-                        settings: {
-                            arrows: false
-                        }
-                    }]
+                    adaptiveHeight: true
                 });
                 var current_article = $('.slider').slick('slickCurrentSlide');
                 var total_articles = $('.slider').slideCount;
@@ -178,7 +171,8 @@ window.addEventListener('DOMContentLoaded', function() {
     let burgerBtn = document.querySelector('.header__burger'),
         headerMenu = document.querySelector('.header');
 
-        burgerBtn.addEventListener('click', function() {
+        burgerBtn.addEventListener('click', function(e) {
+            e.preventDefault();
             headerMenu.classList.toggle('menu-active');
         })
 
