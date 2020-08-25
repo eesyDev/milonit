@@ -4,6 +4,8 @@ div {
 
 .popup-link {
     display: inline-block;
+    color: #fff;
+    font-size: 12px;
 }
 
 .popup {
@@ -17,7 +19,10 @@ div {
 
 
 .slider-buy {
-    width: 86%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1136px;
     height: 680px;
     margin: 0 auto;
     z-index: 10;
@@ -26,13 +31,15 @@ div {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: animation-fade, 0.4s;
+    -webkit-animation: animation-fade, 0.4s;
+            animation: animation-fade, 0.4s;
 }
 
 .slider__buy-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    height: 100%;
 }
 
 .slider__buy-right {
@@ -59,6 +66,8 @@ div {
 
 
 .slider__buy-img img {
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
     padding-left: 78px;
 }
@@ -208,6 +217,11 @@ div {
     background-color: #fff;
     border-radius: 10px;
     margin-top: 10px;
+    padding: 0 25px;
+}
+
+#buy-2-btn {
+    padding: 17px 40px;
 }
 
 .sum__inner {
@@ -218,9 +232,8 @@ div {
 
 .sum__num {
     margin-top: 18px;
-    padding-left: 31px;
     margin-bottom: 18px;
-    padding-right: 50px;
+    padding-right: 73px;
     border-right: 1px solid rgba(103, 175, 168, 0.4);
 }
 
@@ -247,14 +260,21 @@ div {
 
 .slider-item-two {
     width: 94%;
-    height: 540px;
-    margin: 30px auto 0;
+    height: 675px;
     border-radius: 10px;
     background-image: url(../images/step-two-bg.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 10;
+}
+
+.slider-item .slider-item-three {
+    height: 675px;
+}
+
+.slider-item-four {
+    height: 675px;
 }
 .arrow-left {
     width: 100px;
@@ -351,15 +371,25 @@ div {
     display: none;
 }
 .variant label {
+    padding: 13px 30px;
     display: inline-block;
     cursor: pointer;
-    user-select: none;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .variant input[type=radio]:checked + label {
     background: #A8DBD5;
+    width: 100%;
+    text-align: center;
 }
 .variant input[type=radio]:disabled + label {
     background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .slider__two-name p {
@@ -381,7 +411,7 @@ div {
 }
 
 .first__buy-inputs {
-    padding-bottom: 44px;
+    margin-bottom: 60px;
 }
 
 .your_name {
@@ -394,7 +424,7 @@ div {
 }
 
 .slider__two-contacts {
-    margin-bottom: 64px;
+    margin-bottom: 125px;
 }
 
 .slider__two-contacts  p {
@@ -409,7 +439,7 @@ div {
 }
 
 .second__buy-inputs {
-    margin-bottom: 17px;
+    margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -469,10 +499,13 @@ div {
 }
 
 .slider__three-wrapper {
+    height: 675px;
     padding: 50px 68px;
 }
 
 .info__img {
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
     margin-right: 10px;
 }
@@ -514,13 +547,13 @@ div {
 }
 
 .slider__three-info {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .info__name {
     display: flex;
     align-items: center;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
 }
 
 .info__name p {
@@ -543,7 +576,7 @@ div {
 .info__address {
     display: flex;
     align-items: center;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
 }
 
 .info__address p {
@@ -566,7 +599,7 @@ div {
 .info__tel {
     display: flex;
     align-items: center;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
 }
 
 .info__tel p {
@@ -589,7 +622,7 @@ div {
 .info__email {
     display: flex;
     align-items: center;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
 }
 
 .info__email p {
@@ -621,13 +654,14 @@ div {
 }
 
 .variant {
-    padding: 13px 30px;
     background: #FFFFFF;
     border: 1px solid #A8DBD5;
     box-sizing: border-box;
     border-radius: 30px;
     margin-right: 10px;
     cursor: pointer;
+    overflow: hidden;
+    text-align: center;
 }
 
 .variant__item-three {
@@ -662,7 +696,7 @@ div {
 
 .slider-item-three, .slider-item-four {
     width: 100%;
-    height: 580px;
+    height: 100%;
     border-radius: 10px;
     background-image: url(../images/step-two-bg.jpg);
     background-position: bottom;
@@ -822,7 +856,7 @@ div {
 }
 
 .slider__dots-three {
-    padding-top: 54px;
+    margin-top: 130px;
 }
 
 .last__two-inputs {
@@ -835,3 +869,19 @@ div {
     align-items: center;
 }
 
+.close {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    top: 8%;
+    right: 2%;
+    font-size: 30px;
+    z-index: 106;
+    border-radius: 50%;
+    transform: rotate(45deg)
+}
+
+@media (min-width: 1501px) {
+    
+}
