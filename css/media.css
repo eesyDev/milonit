@@ -2536,12 +2536,15 @@
     }
     .slick-prev {
         bottom: 55px;
-        width: 70px !important;
+        width: 90px !important;
     }
     .slick-next {
         bottom: 55px;
         right: 115px;
-        width: 70px !important;
+        width: 90px !important;
+    }
+    .slick-prev span, .slick-next span {
+        display: none;
     }
     .article-active .overlay-art {
         top: 20px;
@@ -2667,14 +2670,14 @@
         font-size: 32px;
     }
     .slick-prev {
-        width: 45px !important;
+        width: 85px !important;
         bottom: 55px;
-        left: 150px;
+        left: 185px;
     }
     .slick-next {
-        width: 45px !important;
+        width: 85px !important;
         bottom: 55px;
-        right: 115px;
+        right: 65px;
     }
     .variant label {
         font-size: 13px;
@@ -3057,7 +3060,7 @@
         left: 45px;
     }
     .slick-next {
-        right: 95px;
+        right: 40px;
     }
     .review__modal {
         width: 62%;
@@ -3094,6 +3097,7 @@
     .slider__dots-three {
         top: 20px;
         margin-top: 60px;
+        margin-left: 40px;
     }
     .info__address span {
         font-size: 10px;
@@ -3123,6 +3127,9 @@
         top: -312px;
         right: -116px;
         font-size: 40px;
+    }
+    .slider__two-wrapper .slider__dots {
+        margin-left: 40px;
     }
 }
 
@@ -3312,7 +3319,7 @@
         left: 30px;
     }
     .slick-next {
-        right: 95px;
+        right: 25px;
     }
     .review__modal {
         width: 74%;
