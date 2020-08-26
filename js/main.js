@@ -8,7 +8,9 @@ $(document).ready(function () {
                     nextArrow: '<button class="slick-arrow slick-next"><span>вперед</span><img src="images/buy-arrow-right.png" alt=""></button>',
                     dots: false,
                     infinite: false,
-                    adaptiveHeight: true
+                    adaptiveHeight: true,
+                    draggable: false,
+                    swipe: false
                 });
                 var current_article = $('.slider').slick('slickCurrentSlide');
                 var total_articles = $('.slider').slideCount;
@@ -25,7 +27,7 @@ $(document).ready(function () {
                        $('.slick-prev').show();
                     }
                     if (current_article==total_articles-1){
-                        $('.slick-next').hide();
+                        $('.slick-next, .slick-prev').hide();
                     }else{
                         $('.slick-next').show();
                     }
