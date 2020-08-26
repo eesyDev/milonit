@@ -1663,7 +1663,7 @@
         width: 85%
     }
     .your_name, .your_sername {
-        padding-right: 80px;
+        padding-right: 70px;
     }
     .your_house {
         padding-left: 20px;
@@ -1931,9 +1931,6 @@
     }
     .popup__wrapper .popup__tel--button {
         padding: 7px 40px;
-    }
-    .contacts__buble-form {
-        margin-bottom: 130px;
     }
     .article-active .overlay-art {
         top: -2140px;
@@ -2531,8 +2528,14 @@
     .send__money {
         margin-bottom: -25px;
     }
-    .slick-prev, .slick-next {
-        display: none !important;
+    .slick-prev {
+        bottom: 55px;
+        width: 70px !important;
+    }
+    .slick-next {
+        bottom: 55px;
+        right: 115px;
+        width: 70px !important;
     }
     .article-active .overlay-art {
         top: 20px;
@@ -2546,6 +2549,9 @@
         top: -344px;
         right: -150px;
         font-size: 50px;
+    }
+    .slider__two-contacts {
+        margin-bottom: 105px;
     }
 }
 
@@ -2655,14 +2661,17 @@
         font-size: 32px;
     }
     .slick-prev {
-        left: 80px;
-        height: 0;
-        display: none !important;
+        width: 45px !important;
+        bottom: 55px;
+        left: 150px;
     }
     .slick-next {
-        right: 80px;
-        height: 0;
-        display: none !important;
+        width: 45px !important;
+        bottom: 55px;
+        right: 115px;
+    }
+    .variant label {
+        font-size: 13px;
     }
     .review__modal {
         font-size: 19px;
@@ -2697,7 +2706,7 @@
     }
     .slider__four-info-cost, .slider__four-info-pol {
         width: 300px;
-        margin: 25px auto 0;
+        margin: 10px auto 0;
     }
     .slider__four-info-pol img {
         width: 70px;
@@ -2799,6 +2808,9 @@
     }
     .slider__two-step {
         font-size: 20px;
+    }
+    .slick-prev {
+        left: 115px;
     }
     .your_name::-webkit-input-placeholder {
         font-size: 12px;
@@ -3091,10 +3103,10 @@
         font-size: 29px;
     }
     .slick-prev {
-        left: 65px;
+        left: 45px;
     }
     .slick-next {
-        right: 65px;
+        right: 95px;
     }
     .review__modal {
         width: 62%;
@@ -3130,6 +3142,7 @@
     }
     .slider__dots-three {
         top: 20px;
+        margin-top: 60px;
     }
     .info__address span {
         font-size: 10px;
@@ -3344,10 +3357,10 @@
         font-size: 25px;
     }
     .slick-prev {
-        left: 50px;
+        left: 30px;
     }
     .slick-next {
-        right: 50px;
+        right: 95px;
     }
     .review__modal {
         width: 74%;
@@ -3436,5 +3449,8 @@
     }
     .slider__dots-four {
         margin-top: 70px;
+    }
+    .slick-prev {
+        left: 15px;
     }
 }

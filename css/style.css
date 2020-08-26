@@ -748,6 +748,7 @@ div {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    overflow-x: hidden;
 }
 
 .slider__four-wr {
