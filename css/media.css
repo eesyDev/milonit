@@ -2491,6 +2491,12 @@
     .slider__dots {
         top: -82px;
     }
+    .your_housing::-moz-placeholder, .your_house::-moz-placeholder, .your_flat::-moz-placeholder {
+        font-size: 10px;
+    }
+    .your_housing:-ms-input-placeholder, .your_house:-ms-input-placeholder, .your_flat:-ms-input-placeholder {
+        font-size: 10px;
+    }
     .your_housing::placeholder, .your_house::placeholder, .your_flat::placeholder {
         font-size: 10px;
     }
@@ -2809,25 +2815,21 @@
     .slider__two-step {
         font-size: 20px;
     }
+
     .slick-prev {
         left: 115px;
     }
     .your_name::-webkit-input-placeholder {
         font-size: 12px;
     }
+
     .your_name::-moz-placeholder {
         font-size: 12px;
     }
     .your_name:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_name::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_name::placeholder {
-        font-size: 12px;
-    }
-    .your_sername::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_sername::-moz-placeholder {
@@ -2836,13 +2838,7 @@
     .your_sername:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_sername::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_sername::placeholder {
-        font-size: 12px;
-    }
-    .your_index::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_index::-moz-placeholder {
@@ -2851,13 +2847,7 @@
     .your_index:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_index::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_index::placeholder {
-        font-size: 12px;
-    }
-    .your_sity::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_sity::-moz-placeholder {
@@ -2866,13 +2856,7 @@
     .your_sity:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_sity::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_sity::placeholder {
-        font-size: 12px;
-    }
-    .your_street::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_street::-moz-placeholder {
@@ -2881,13 +2865,7 @@
     .your_street:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_street::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_street::placeholder {
-        font-size: 12px;
-    }
-    .your_house::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_house::-moz-placeholder {
@@ -2896,13 +2874,7 @@
     .your_house:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_house::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_house::placeholder {
-        font-size: 12px;
-    }
-    .your_housing::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_housing::-moz-placeholder {
@@ -2911,13 +2883,7 @@
     .your_housing:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_housing::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_housing::placeholder {
-        font-size: 12px;
-    }
-    .your_flat::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_flat::-moz-placeholder {
@@ -2926,13 +2892,7 @@
     .your_flat:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_flat::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_flat::placeholder {
-        font-size: 12px;
-    }
-    .your_tel::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_tel::-moz-placeholder {
@@ -2941,22 +2901,13 @@
     .your_tel:-ms-input-placeholder {
         font-size: 12px;
     }
-    .your_tel::-ms-input-placeholder {
-        font-size: 12px;
-    }
     .your_tel::placeholder {
-        font-size: 12px;
-    }
-    .your_email::-webkit-input-placeholder {
         font-size: 12px;
     }
     .your_email::-moz-placeholder {
         font-size: 12px;
     }
     .your_email:-ms-input-placeholder {
-        font-size: 12px;
-    }
-    .your_email::-ms-input-placeholder {
         font-size: 12px;
     }
     .your_email::placeholder {
@@ -3311,6 +3262,7 @@
     .facts__item-4 {
         top: 961px;
         left: 120px;
+
         height: 140px;
     }
     .facts__item-text--1, .facts__item-text--2, .facts__item-text--3, .facts__item-text--4 {
