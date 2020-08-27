@@ -130,6 +130,7 @@ section {
 
 .numb {
     position: relative;
+    top: -40px;
     padding-left: 70px;
     font-family: SeogeBold;
     font-weight: 700;
@@ -754,7 +755,7 @@ section {
 .about-us {
     background-image: url(../images/2desc.jpg);
     min-height: 1290px;
-    background-position: center bottom;
+    /* background-position: center bottom; */
     display: flex;
     align-items: center;
     position: relative;
@@ -1119,7 +1120,7 @@ section {
     width: 100%;
     background-position: center bottom;
     background-image: url(../images/3desc.png);
-    background-size: 100% 86%;
+    background-size: 100% 83%;
     background-repeat: no-repeat
 }
 
@@ -1171,7 +1172,7 @@ section {
 .application__wrapper--button {
     position: absolute;
     bottom: -45px;
-    left: calc(50% - 160px);
+    left: calc(50% - 195px);
     background: linear-gradient(90deg, #5f294f 0, #8f5693 100%);
     padding: 4px;
     border-radius: 30px;
@@ -1398,7 +1399,7 @@ section {
     position: absolute;
     width: 529px;
     height: 529px;
-    top: 182px;
+    top: 155px;
     left: -8px
 }
 
@@ -1464,7 +1465,7 @@ section {
 }
 
 .facts {
-    background-image: url(../images/bg4-clean.jpg);
+    background-image: url(../images/4desc.png);
     min-height: 1730px;
     background-position: center bottom;
     background-size: cover;
@@ -1696,12 +1697,12 @@ section {
 }
 
 .syspenz {
-    background-image: url(../images/gori.png);
+    background-image: url(../images/5desc.png);
     min-height: 1400px;
     background-position: center bottom;
     position: relative;
-    margin-top: -920px;
-    background-size: 160% !important;
+    margin-top: -962px;
+    background-size: 100% !important;
     opacity: .99
 }
 
@@ -1728,6 +1729,7 @@ section {
 .syspenz__img-wrapper {
     position: absolute;
     right: -150px;
+    bottom: -30px;
     width: 1310px
 }
 
@@ -1736,10 +1738,10 @@ section {
 }
 
 .syspenz__block {
-    padding-top: 80px;
+    padding-top: 120px;
     padding-left: 60px;
     width: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
     z-index: 2;
     position: relative
 }
@@ -1813,12 +1815,12 @@ section {
 }
 
 .opt {
-    background-image: url(../images/6section.png);
+    background-image: url(../images/6desc.png);
     min-height: 880px;
     padding-top: 175px;
     background-position: center bottom;
     margin-top: -75px;
-    background-size: 101% !important
+    background-size: 100% !important
 }
 
 .opt__inner {
@@ -1963,7 +1965,7 @@ section {
 .opt__bg-img {
     position: absolute;
     width: 491px;
-    bottom: -260px;
+    bottom: -300px;
     left: 70px;
 }
 
@@ -2049,10 +2051,11 @@ section {
 }
 
 .review {
-    background-image: url(../images/7section.png);
+    background-image: url(../images/7desc.png);
     min-height: 1060px;
     /* background-position: center bottom; */
     margin-bottom: -182px;
+    margin-top: -55px;
     padding-bottom: 150px
 }
 
@@ -2060,7 +2063,7 @@ section {
     display: flex;
     justify-content: center;
     position: relative;
-    padding-top: 50px;
+    padding-top: 150px;
     margin-bottom: 80px
 }
 
@@ -2091,7 +2094,7 @@ section {
 .review .numb {
     position: absolute;
     left: 15px;
-    top: 75px;
+    top: 175px;
     transform: translateY(-50%)
 }
 
@@ -2141,12 +2144,12 @@ section {
     left: 50%;
     transform: translateX(-50%);
     font-family: Rubik;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1;
     margin: 0 auto;
     cursor: pointer;
     color: #3e767b;
-    text-transform: uppercase;
+    text-shadow: 0 -2px 0 #b6dad6, 0 -2px 0 #b6dad6, 0 2px 0 #b6dad6, 0 2px 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -1px -2px 0 #b6dad6, 1px -2px 0 #b6dad6, -1px 2px 0 #b6dad6, 1px 2px 0 #b6dad6, -2px -1px 0 #b6dad6, 2px -1px 0 #b6dad6, -2px 1px 0 #b6dad6, 2px 1px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, 0 10px 10px rgba(62, 118, 123, .1);
 }
 .review__modal:hover {
     color: #70b9c0;
@@ -2212,10 +2215,10 @@ section {
 }
 
 .contacts {
-    background-image: url(../images/8section.png);
+    background-image: url(../images/8desc.png);
     min-height: 1015px;
     background-position: center bottom;
-    margin-top: -290px;
+    margin-top: -325px;
     padding-top: 280px;
     background-size: 107% !important
 }
@@ -2341,7 +2344,7 @@ section {
 }
 
 .contacts__buble-button {
-    padding: 17px 90px
+    padding: 17px 75px
 }
 
 .contacts__buble-warning {
@@ -2379,7 +2382,7 @@ section {
 
 .contacts__item {
     display: flex;
-    margin-bottom: 50px
+    margin-bottom: 30px
 }
 
 .contacts__item-title {
@@ -2405,7 +2408,7 @@ section {
     font-family: Rubik;
     font-weight: 900;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 28px;
     color: #3e767b;
     margin-bottom: 10px;
     text-shadow: 0 -2px 0 #b6dad6, 0 -2px 0 #b6dad6, 0 2px 0 #b6dad6, 0 2px 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -2px 0 0 #b6dad6, 2px 0 0 #b6dad6, -1px -2px 0 #b6dad6, 1px -2px 0 #b6dad6, -1px 2px 0 #b6dad6, 1px 2px 0 #b6dad6, -2px -1px 0 #b6dad6, 2px -1px 0 #b6dad6, -2px 1px 0 #b6dad6, 2px 1px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, -2px -2px 0 #b6dad6, 2px -2px 0 #b6dad6, -2px 2px 0 #b6dad6, 2px 2px 0 #b6dad6, 0 10px 10px rgba(62, 118, 123, .1)
@@ -2922,7 +2925,7 @@ section {
 }
 
 footer {
-    background-image: url(../images/footer-bg.png);
+    background-image: url(../images/9desc.png);
     min-height: 170px;
     width: 100%;
     margin-top: -20px;

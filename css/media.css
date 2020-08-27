@@ -13,7 +13,7 @@
 
 @media (min-width: 1459px) {
     .syspenz__piece {
-        bottom: -50px
+        bottom: -55px
     }
 }
 
@@ -39,7 +39,7 @@
         bottom: -20px
     }
     .about-us {
-        background-image: url(../images/2hd.png);
+        background-image: url(../images/2hd.jpg);
         margin-top: -480px;
         margin-bottom: -140px
     }
@@ -73,10 +73,10 @@
         min-height: 2700px
     }
     .syspenz {
-        margin-top: -1950px;
+        margin-top: -1685px;
         background: 0 0;
-        background-image: none !important;
-        min-height: 10px
+        background-image: url(../images/5hd.png);
+        min-height: 10px;
     }
 
     .syspenz::before {
@@ -93,7 +93,7 @@
     .opt {
         min-height: 650px;
         background: 0 0;
-        background-image: none !important;
+        background-image: url(../images/6hd.png);
         margin-top: 60px;
         padding-top: 0;
     }
@@ -127,19 +127,22 @@
         margin-top: -105px;
         min-height: 2160px;
         padding: 10rem 0;
-        background-image: url(../images/5hd.png);
+        background-image: url(../images/7hd.png);
         background-position: center;
     }
     .review .numb {
         top: 65px
     }
     .contacts {
-        background: none;
+        background-image: url(../images/8hd.png);
         padding-top: 0;
         min-height: 840px;
         margin-top: -840px;
         position: relative;
         margin-bottom: 0
+    }
+    footer {
+        background-image: url(../images/9hd.png);
     }
     footer .footer__wrapper--info-button {
         width: 340px;
@@ -157,7 +160,7 @@
     footer .footer__wrapper--info-call {
         align-items: center
     }
-    .webp .preview::before {
+    /* .webp .preview::before {
         background-image: url(../images/1hd.webp);
     }
     .webp .about-us {
@@ -171,7 +174,7 @@
     }
     .webp .review {
         background-image: url(../images/5hd.webp);
-    }
+    } */
 }
 
 @media (min-width: 1999px) {
@@ -862,7 +865,7 @@
         width: 100%;
         transform: none;
         background-size: 100%;
-        background-image: url(../images/1table.png)
+        background-image: url(../images/1table.png);
     }
     .preview__product-info .preview__product-button {
         padding: 9.5px 33px;
@@ -912,6 +915,7 @@
         width: 210px;
     }
     .about-us {
+        background-image: url(../images/2table.jpg);
         margin: -315px 0 335px;
     }
     .about-us__inner .about-us__inner {
@@ -1212,10 +1216,9 @@
     .syspenz {
         margin-top: -2675px;
         background: 0 0;
-        background-image: none !important;
+        background-image: url(../images/5table.png);
         min-height: 10px
     }
-
     .syspenz::before {
         display: none
     }
@@ -1266,7 +1269,7 @@
     .opt {
         min-height: 1670px;
         background: 0 0;
-        background-image: none !important;
+        background-image: url(../images/6table.png);
         margin-top: 80px;
         padding-top: 0;
     }
@@ -1331,7 +1334,7 @@
         margin-top: -630px;
         min-height: 3410px;
         padding: 2rem 0;
-        background-image: url(../images/5table.png)
+        background-image: url(../images/7table.png)
     }
     .review .numb {
         left: 15px;
@@ -1380,7 +1383,7 @@
         padding-top: 0;
         min-height: 1080px;
         background: 0 0;
-        background-image: none !important;
+        background-image: url(../images/8table.png);
         margin-top: -1415px;
         position: relative;
         margin-bottom: 0;
@@ -1465,7 +1468,8 @@
         max-width: 76%
     }
     footer {
-        margin-top: 320px
+        margin-top: 320px;
+        background-image: url(../images/9table.png);
     }
     footer .footer__wrapper--info-company {
         display: flex;
@@ -2100,7 +2104,7 @@
         min-height: 2391px;
         margin: -320px 0 -320px;
         padding-top: 100px;
-        background-image: url(../images/2mobile.jpg)
+        background-image: url(../images/2mobile.jpg);
     }
     .about-us__inner {
         width: 290px;
@@ -2204,7 +2208,7 @@
         left: -100px
     }
     .facts {
-        background-image: url(../images/4mobile.jpg);
+        background-image: url(../images/4mobile.png);
         min-height: 1800px;
         margin-top: -205px;
         padding-top: 3.5rem
@@ -2279,7 +2283,7 @@
         transform: rotate(-27deg)
     }
     .syspenz {
-        background-image: url(../images/5mobile.jpg) !important;
+        background-image: url(../images/5mobile.png) !important;
         min-height: 1999px !important;
         margin-top: -785px;
         padding-top: 550px;
@@ -2303,7 +2307,7 @@
         margin: -50px 0 0 0;
     }
     .opt {
-        background-image: url(../images/6mobile.jpg) !important;
+        background-image: url(../images/6mobile.png) !important;
         min-height: 2145px !important;
         margin-top: -995px;
         padding-top: 500px
@@ -2343,7 +2347,7 @@
         bottom: -52%
     }
     .review {
-        background-image: url(../images/7mobile.jpg);
+        background-image: url(../images/7mobile.png);
         min-height: 450px;
         margin-top: -390px;
         padding-top: 95px
@@ -2362,7 +2366,7 @@
         font-size: 22px;
     }
     .contacts {
-        background-image: url(../images/8mobile.jpg) !important;
+        background-image: url(../images/8mobile.png) !important;
         min-height: 1390px !important;
         margin-top: -100px;
         padding-top: 120px;
@@ -2379,6 +2383,7 @@
     }
     footer {
         margin-top: 285px;
+        background-image: url(../images/9mobile.png);
     }
     footer .footer__wrapper--info-call {
         flex-direction: column;
