@@ -864,6 +864,9 @@
         background-size: 100%;
         background-image: url(../images/1table.png)
     }
+    .preview__product-info .preview__product-button {
+        padding: 9.5px 33px;
+    }
     .preview__inner {
         flex-direction: column;
         margin-bottom: 3rem
@@ -912,7 +915,7 @@
         margin: -315px 0 335px;
     }
     .about-us__inner .about-us__inner {
-        padding-top: 65px
+        padding-top: 65px;
     }
     .about-us__bubles {
         flex-direction: column;
@@ -2942,7 +2945,8 @@
         width: 320px;
     }
     .header__burger, .header__cart {
-        width: 65px;
+        width: 68px;
+        height: 58px;
         flex: 0 0 53px;
     }
     .preview {
@@ -2952,21 +2956,44 @@
     .preview__logo {
         width: 120px;
     }
+    .preview__text {
+        font-size: 20px;
+        line-height: 25px;
+    }
     .preview__product-img {
-        width: 85%;
+        width: 320px;
+        height: 177px;
+        margin-bottom: 20px;
     }
     .preview__product-info {
-        width: 90%;
+        width: 290px;
+        height: 51px;
     }
     .preview__product-info .preview__product-button-wrapper {
         width: 150px;
+        height: 32px;
         margin-right: 0;
+    }
+    .preview__product-info .preview__product-button  {
+        height: inherit;
     }
     .preview__product-price {
         margin-left: 20px;
+        font-size: 22px;
+    }
+    .preview__product-price-val {
+        margin-top: 3px;
     }
     .about-us__inner {
         left: 45px;
+        top: 230px;
+    }
+    .about-us__subtitle {
+        font-size: 14px;
+    }
+    .about-us__bubles .help-img-2 {
+        left: -68px;
+        top: -41px;
     }
     .application {
         min-height: 1590px;
