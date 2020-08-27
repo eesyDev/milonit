@@ -1511,6 +1511,12 @@ section {
     width: 100%;
     height: 1030px
 }
+.facts__item-circle {
+    background: url(../images/circle-non.png);
+}
+.facts__item-circle--active {
+    background: url(../images/circle.png);
+}
 
 .facts__item {
     font-family: mainTextBold;
