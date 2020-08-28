@@ -153,8 +153,8 @@ section {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 45%;
+    transform: translateY(-49%);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -302,8 +302,8 @@ section {
     font-weight: 900;
     color: #3e767b;
     cursor: pointer;
-    font-size: 10px;
-    padding: 10px 30px
+    font-size: 11px;
+    padding: 8px 30px
 }
 
 .header__lang {
@@ -1121,7 +1121,7 @@ section {
 .application {
     min-height: 1270px;
     position: relative;
-    padding-top: 2rem
+    padding-top: 0
 }
 
 .application::before {
@@ -1182,7 +1182,7 @@ section {
 
 .application__wrapper--button {
     position: absolute;
-    bottom: -45px;
+    bottom: -10px;
     left: calc(50% - 195px);
     background: linear-gradient(90deg, #5f294f 0, #8f5693 100%);
     padding: 4px;
@@ -1823,7 +1823,7 @@ section {
     height: 180px;
     background: #265a5e;
     position: absolute;
-    bottom: -140px;
+    bottom: -150px;
     z-index: -1;
 }
 
