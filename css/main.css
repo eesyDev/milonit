@@ -121,6 +121,14 @@ section {
     text-transform: uppercase;
     letter-spacing: .15em
 }
+.contacts {
+    min-height: 1079px;
+}
+.contacts__buble-button {
+    background-position-x: -6px !important;
+    background-position-y: -15px !important;
+    background-size: 105% !important;
+}
 
 .button-wrapper {
     padding: 4px;
@@ -650,7 +658,10 @@ section {
 .preview__product-info .preview__product-button {
     padding: 17px 66px;
     font-size: 12px;
-    font-weight: 900
+    font-weight: 900;
+    background-position-y: -2px !important;
+    background-position-x: 2px !important; 
+    
 }
 
 .preview__product-price {
@@ -1182,8 +1193,10 @@ section {
 .application__wrapper--button-style {
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
     background-image: url(../images/violet-button-bg.png) !important;
-    background-position-y: -79px !important;
-    background: url(../images/violet-button-bg.png)
+    background: url(../images/violet-button-bg.png);
+    background-position-y: -14px !important;
+    background-position-x: -16px !important;
+    background-size: 111% !important;
 }
 
 @media screen and (max-width:510px) {
@@ -1934,7 +1947,8 @@ section {
     text-transform: uppercase;
     color: #8f5693;
     padding: 17px 51px;
-    background-position-y: -84px !important;
+    background-position-y: -68px !important;
+    background-position-x: -1px !important;
     background-color: #ffdbf9 !important;
     background-image: url(../images/pink-button-bg.png) !important;
     background: url(../images/pink-button-bg.png), linear-gradient(270deg, #ffdbf9 0, #ffdbf9 .01%, #e9c4e3 100%);
