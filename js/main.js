@@ -272,13 +272,13 @@ window.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function(){
     $('.review__slider').slick({
-        arrows: true,
+        arrows: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../images/arrowLeft.png"></img></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../images/arrowRight.png"></img></button>',
+        // prevArrow: '<button type="button" class="slick-prev"><img src="../images/arrowLeft.png"></img></button>',
+        // nextArrow: '<button type="button" class="slick-next"><img src="../images/arrowRight.png"></img></button>',
         responsive: [{
             breakpoint: 525,
             settings: {
