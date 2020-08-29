@@ -682,11 +682,6 @@ section {
     .preview__item+.preview__item {
         margin-left: 0
     }
-
-    .preview__product-info .preview__product-button-wrapper {
-        margin-right: 10px
-    }
-
     .preview__product-info .preview__product-button {
         padding: 5px 33px
     }
@@ -1175,6 +1170,7 @@ section {
 .application__wrapper--tabs {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 900px;
     width: 100%;
     justify-content: flex-start

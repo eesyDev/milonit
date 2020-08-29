@@ -272,7 +272,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function(){
     $('.review__slider').slick({
-        arrows: false,
+        arrows: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
