@@ -2070,6 +2070,10 @@ section {
     background-image: url(../images/insta-icon.png)
 }
 
+.review__arrows {
+    display: none;
+}
+
 .contacts {
     background-image: url(../images/8desc.png);
     min-height: 1015px;
