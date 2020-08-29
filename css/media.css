@@ -2323,6 +2323,12 @@
         top: -401px;
         right: -236px;
     }
+    .contacts__buble-form .button-inside {
+        width: 245px !important;
+    }
+    .contacts__buble-form .popup__tel--button {
+        background-position: 78% 71% !important;
+    }
 }
 
 @media (max-width: 750px) {
@@ -3791,10 +3797,13 @@
         font-size: 22px;
     }
     .facts__item-1 {
-        left: 0;
+        left: -31px;
     }
     .facts__item-2 {
-        right: -20px
+        right: -70px
+    }
+    .facts__item-3 {
+        left: -55px;
     }
     .facts__item-text--1:after {
         top: 267px
@@ -3804,7 +3813,7 @@
         top: 275px
     }
     .facts__item-4 {
-        left: 203px;
+        left: 255px;
     }
     .facts__item-text--1, .facts__item-text--2 {
         width: 315px;
@@ -3880,13 +3889,13 @@
     .review__item {
         width: 260px;
     }
-    .slick-prev {
+    .review .slick-prev {
         left: 60px !important;
         width: 75px !important;
         bottom: -33px !important;
 
     }
-    .slick-next {
+    .review .slick-next {
         right: 72px !important;
         width: 75px !important;
         bottom: -33px !important;
@@ -4090,7 +4099,7 @@
         min-height: 2350px !important;
     }
     .opt {
-        min-height: 2105px !important;
+        min-height: 2110px !important;
         margin-top: -1550px;
     }
     .opt__title {
@@ -4215,7 +4224,7 @@
         left: 5px;
     }
     .popup__wrapper .popup__tel--title {
-        margin: 75px 0 0;
+        margin: -10px 0 0;
     }
     .preview__item+.preview__item {
         margin-left: 17px;
