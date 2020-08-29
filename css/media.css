@@ -1624,17 +1624,16 @@
     .review .slick-prev {
         bottom: -40px;
         right: 260px;
+        outline: none;
     }
     .review .slick-next {
         bottom: -40px;
         right: 165px;
+        outline: none;
     }
     .review__item-social {
         width: 80px;
         height: 80px;
-    }
-    .article-active .overlay-art {
-        top: -2240px;
     }
     .contacts {
         padding-top: 0;
@@ -2018,17 +2017,11 @@
     .slider__four-info-img {
         transform: translateX(9%);
     }
-    .article-active .overlay-art {
-        top: -2140px;
-        width: 670px;
-        height: 980px;
-    }
     .article-active .overlay-art iframe {
         width: 84% !important;
         margin: 0 auto !important;
     }
     .close-art {
-        top: -446px;
         right: -300px;
     }
 }
@@ -2311,17 +2304,11 @@
     .popup__wrapper .popup__tel--button {
         padding: 7px 40px;
     }
-    .article-active .overlay-art {
-        top: -2140px;
-        width: 530px;
-        height: 880px;
-    }
     .article-active .overlay-art iframe {
         width: 72% !important;
     }
     .close-art {
-        top: -401px;
-        right: -236px;
+        right: -250px;
     }
     .contacts__buble-form .button-inside {
         width: 245px !important;
@@ -2982,17 +2969,11 @@
     .slick-prev span, .slick-next span {
         display: none;
     }
-    .article-active .overlay-art {
-        top: 20px;
-        width: 385px;
-        height: 740px;
-    }
     .article-active .overlay-art iframe {
         width: 56% !important;
     }
     .close-art {
-        top: -344px;
-        right: -150px;
+        right: -200px;
         font-size: 50px;
     }
     .slider__two-contacts {
@@ -3907,6 +3888,10 @@
     .review__modal {
         width: 70%;
         font-size: 25px;
+        position: relative;
+        top: -85px;
+        left: 5%;
+
     }
     .review__arrows {
         position: relative;
@@ -3914,7 +3899,7 @@
         justify-content: space-between;
         align-items: center;
         width: 46%;
-        margin: 0 auto;
+        margin-left: 25%;
         top: -140px;
     }
     .review__leftArr, .review__rightArr {
@@ -4005,19 +3990,12 @@
     .slider__dots-four {
         margin-top: 70px;
     }
-    .article-active .overlay-art {
-        top: -1308px;
-        width: 296px;
-        height: 690px;
-        border-width: 1px;
-    }
     .article-active .overlay-art iframe {
-        width: 32% !important;
+        width: 26% !important;
         min-width: 265px;
     }
     .close-art {
-        top: -312px;
-        right: -116px;
+        right: -150px;
         font-size: 40px;
     }
     .slider__two-wrapper .slider__dots {
