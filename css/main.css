@@ -122,9 +122,14 @@ section {
     text-transform: uppercase;
     letter-spacing: .15em
 }
+.slick-slide:focus {
+    outline: none !important;
+}
 .send__money {
     z-index: 2;
     background-position-y: -76px !important;
+    border: 3px solid #305659;
+    background-position-x: -38px !important;
 }
 .contacts {
     min-height: 1079px;
@@ -426,12 +431,12 @@ section {
     position: fixed;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: 2;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0,0,0, .8);
 }
 
 .menu-active .header__burger--item {
@@ -464,10 +469,10 @@ section {
     position: absolute;
     display: flex;
     width: 85%;
-    min-height: 480px;
-    top: 50%;
+    min-height: 530px;
+    top: 50vh;
     left: 50%;
-    transform: translate(-50%, -5%);
+    transform: translate(-50%, -50%);
     z-index: 10;
     flex-direction: column
 }
@@ -500,8 +505,9 @@ section {
     background: #fff;
     padding: 10px;
     border-radius: 50%;
-    width: 260px;
-    height: 260px
+    width: 240px;
+    height: 230px;
+    margin-bottom: 30px;
 }
 
 .menu-active .header__nav .nav__wrapper--link {
@@ -518,11 +524,13 @@ section {
 .menu-active .header__nav--logo {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    margin-top: 25px;
 }
 
 .menu-active .header__nav--logo-img {
-    width: 65px
+    width: 65px;
+    transform: translateX(10px);
 }
 
 .menu-active .header__nav--logo-text {
@@ -532,7 +540,10 @@ section {
 }
 
 .menu-active .header__nav--logo-text p {
-    font-family: SegoeRegular, sans-serif
+    font-family: SegoeRegular, sans-serif;
+    width: 75%;
+    margin: 15px auto 0;
+    font-size: 12px;
 }
 
 .popup__tel--img {
@@ -665,7 +676,7 @@ section {
     font-size: 12px;
     font-weight: 900;
     background-position-y: -2px !important;
-    background-position-x: -11px !important; 
+    background-position-x: -40px !important; 
     
 }
 
@@ -1118,6 +1129,11 @@ section {
     overflow: hidden
 }
 
+.popup__wrapper .popup__tel--button {
+    background-position-x: -60px !important;
+    background-position-y: -14px !important;
+}
+
 .application {
     min-height: 1270px;
     position: relative;
@@ -1131,7 +1147,7 @@ section {
     width: 100%;
     background-position: center bottom;
     background-image: url(../images/3desc.png);
-    background-size: 100% 83%;
+    background-size: 100% 79%;
     background-repeat: no-repeat
 }
 
@@ -2030,7 +2046,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     font-family: Rubik;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 1;
     margin: 0 auto;
     cursor: pointer;
@@ -2045,7 +2061,8 @@ section {
     -o-object-fit: cover;
     object-fit: cover;
     height: 100%;
-    width: 100%
+    width: 100%;
+    border-radius: 10px;
 }
 
 .review__item+.review__item {
@@ -2067,7 +2084,7 @@ section {
 }
 
 .review__item-social--inst {
-    background-image: url(../images/insta-icon.png)
+    background-image: url(../images/insta-icon.svg)
 }
 
 .review__arrows {
@@ -2192,7 +2209,7 @@ section {
 .contacts__buble .telephone-icon::before {
     content: '';
     position: absolute;
-    background-image: url(../images/call.png);
+    background-image: url(../images/call.svg);
     width: 20px;
     height: 22px;
     z-index: 2;

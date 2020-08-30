@@ -4,8 +4,8 @@ $(document).ready(function () {
             open: function () {
                 $('.slider').slick({
                     arrows: true,
-                    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.png" alt=""><span>назад</span></button>',
-                    nextArrow: '<button class="slick-arrow slick-next"><span>вперед</span><img src="images/buy-arrow-right.png" alt=""></button>',
+                    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/buy-arrow-left.svg" alt=""><span>назад</span></button>',
+                    nextArrow: '<button class="slick-arrow slick-next"><span>вперед</span><img src="images/buy-arrow-right.svg" alt=""></button>',
                     dots: false,
                     infinite: false,
                     adaptiveHeight: true,
@@ -15,6 +15,7 @@ $(document).ready(function () {
                 var current_article = $('.slider').slick('slickCurrentSlide');
                 var total_articles = $('.slider').slideCount;
                 $('.slider').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+                    event.preventDefault();
                     current_article = $('.slider').slick('slickCurrentSlide');
                     total_articles = slick.slideCount;
                     slickArrow();

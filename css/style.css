@@ -6,6 +6,7 @@ div {
     display: inline-block;
     color: #fff;
     font-size: 12px;
+    font-family: button, sans-serif;
 }
 
 .popup {
@@ -264,6 +265,9 @@ div {
 
 #buy-2-btn {
     padding: 17px 40px;
+    border: 3px solid #305659;
+    background-position-y: 19% !important;
+    background-position-x: -32px !important;
 }
 
 .sum__inner {
@@ -416,6 +420,7 @@ div {
     padding: 13px 30px;
     display: inline-block;
     cursor: pointer;
+    font-family: seogeNormal, sans-serif;
     text-align: center;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -551,6 +556,9 @@ div {
     width: min-content;
     margin-right: 10px;
 }
+.info__email .info__img {
+    margin-right: 13px;
+}
 
 .slider__three-top {
     display: flex;
@@ -625,16 +633,16 @@ div {
     font-family: Segoe UI;
     font-weight: bold;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 1;
     color: #3E767B;
     margin-right: 8px;
 }
 
 .info__address span {
-        font-family: Segoe UI;
+    font-family: Segoe UI;
     font-weight: bold;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 1;
     color: #143C39;
 }
 
@@ -801,6 +809,7 @@ div {
     font-weight: bold;
     color: #3E767B;
     text-transform: none;
+    width: 63px;
 }
 
 .slider__four-info-line {
