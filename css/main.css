@@ -127,9 +127,16 @@ section {
 }
 .send__money {
     z-index: 2;
-    background-position-y: -76px !important;
+    background-position-y: -115px !important;
     border: 3px solid #305659;
-    background-position-x: -38px !important;
+    background-position-x: -50px !important;
+}
+.validate-value, .deliv-sum, .full-sum {
+    display: flex;
+    justify-content: space-between;
+}
+.deliv-sum {
+    width: 55px !important;
 }
 .contacts {
     min-height: 1079px;
@@ -144,6 +151,9 @@ section {
     padding: 4px;
     background: linear-gradient(90deg, #3e767b 0, #305659 100%);
     border-radius: 30px
+}
+.button-inside {
+    width: 100%;
 }
 
 .numb {
@@ -210,14 +220,16 @@ section {
 .header__nav {
     display: flex;
     flex: 1 1;
-    height: 64px;
+    height: 58px;
     max-width: 990px;
     align-items: center;
     justify-content: space-around;
     border-radius: 45px;
     position: relative;
     z-index: 5;
-    background: url(../images/Menyu_nout.png)
+    background: url(../images/Menyu_nout.png);
+    background-size: 100% 100%;
+    background-position: 100%;
 }
 
 .header__nav--wrapper {
@@ -675,8 +687,8 @@ section {
     padding: 17px 66px;
     font-size: 12px;
     font-weight: 900;
-    background-position-y: -2px !important;
-    background-position-x: -40px !important; 
+    background-position-y: -6px !important;
+    background-position-x: -45px !important; 
     
 }
 
@@ -1130,8 +1142,9 @@ section {
 }
 
 .popup__wrapper .popup__tel--button {
-    background-position-x: -60px !important;
-    background-position-y: -14px !important;
+    background-position-x: -44px !important;
+    background-position-y: -23px !important;
+    background-size: 125% !important;
 }
 
 .application {
@@ -1508,11 +1521,11 @@ section {
     width: 100%;
     height: 1030px
 }
-.facts__item-circle {
-    background: url(../images/circle-non.png);
-}
+/* .facts__item-circle {
+    background: url(../images/circle-non.png) !important;
+} */
 .facts__item-circle--active {
-    background: url(../images/circle.png);
+    background: url(../images/circle.png) !important;
 }
 
 .facts__item {
@@ -1528,10 +1541,12 @@ section {
     color: #3e757a;
     cursor: pointer;
     background-color: transparent;
-    border: none
+    border: none;
+    z-index: 11;
 }
 
 .facts__item-circle {
+    background: url(../images/circle-non.png);
     width: 44px;
     height: 46px;
     margin-top: 18px
@@ -1543,6 +1558,14 @@ section {
 }
 
 .facts__item-text {
+   display: none;
+}
+/* .facts__item-text span {
+    font-family: SeogeBold
+} */
+
+.facts__item-text--active {
+    display: block;
     position: absolute;
     font-size: 16px;
     line-height: 25px;
@@ -1554,19 +1577,10 @@ section {
     border: 1px solid #9cbdc0;
     left: -300px;
     cursor: auto;
-    display: none;
     z-index: 10;
     font-weight: 400;
     letter-spacing: normal;
     background-color: rgba(234, 251, 249, .5)
-}
-
-.facts__item-text span {
-    font-family: SeogeBold
-}
-
-.facts__item-text--active {
-    display: block
 }
 
 .facts__item-text::after {
@@ -2095,7 +2109,7 @@ section {
     background-image: url(../images/8desc.png);
     min-height: 1015px;
     background-position: center bottom;
-    margin-top: -325px;
+    margin-top: -305px;
     padding-top: 280px;
     background-size: 107% !important
 }
@@ -2150,7 +2164,8 @@ section {
     line-height: 23px;
     color: #030d0e;
     margin-bottom: 50px;
-    position: relative
+    position: relative;
+    text-align: center;
 }
 
 .contacts__buble-subtitle::after {
@@ -2583,7 +2598,7 @@ section {
 @media screen and (max-width:750px) {
     .popup__wrapper .popup__tel {
         width: 300px;
-        height: 470px;
+        height: 430px;
         padding: 5px;
         font-size: 14px !important;
         border: 10px solid #cff4f7;
@@ -2646,7 +2661,7 @@ section {
 
     .popup__wrapper .popup__tel--title {
         font-size: 20px;
-        margin: 45px 0 0
+        margin: 0
     }
 
     .popup__wrapper .popup__tel--input {
@@ -2664,6 +2679,7 @@ section {
 .popup__wrapper .popup__tel--button {
     padding: 17px 42px;
     font-size: 14px;
+    width: 100%;
 }
 
 .hide {

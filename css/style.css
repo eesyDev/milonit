@@ -264,10 +264,11 @@ div {
 }
 
 #buy-2-btn {
-    padding: 17px 40px;
+    padding: 17px 34px;
     border: 3px solid #305659;
     background-position-y: 19% !important;
     background-position-x: -32px !important;
+    width: 145px;
 }
 
 .sum__inner {
@@ -279,7 +280,7 @@ div {
 .sum__num {
     margin-top: 18px;
     margin-bottom: 18px;
-    padding-right: 73px;
+    padding-right: 68px;
     border-right: 1px solid rgba(103, 175, 168, 0.4);
 }
 
@@ -766,18 +767,17 @@ div {
 }
 
 .slider__four-img {
-    width: 520px;
-    height: 250px;
-    margin-top: 30px;
+    width: 58%;
+    height: 294px;
+    margin-top: 70px;
 }
 
 .slider__four-info {
-    width: 422px;
-    height: 310px;
+    width: 443px;
+    height: 352px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border-left: 1px solid #A8DBD5;
     padding-left: 30px;
 }
 
@@ -813,15 +813,14 @@ div {
 }
 
 .slider__four-info-line {
-    width: 108%;
+    width: 100%;
     border: none;
     border-top: 1px solid #A8DBD5;
-    margin: 18.5px 0 10.5px;
-    transform: translateX(-30px);
+    margin: 23.5px 0 10.5px;
 }
 
 .slider__four-info-pol {
-    margin-top: 14px;
+    margin-top: 170px;
     font-family: seogeNormal;
     font-weight: normal;
     font-size: 14px;
@@ -908,7 +907,7 @@ div {
 }
 
 .slider__dots-three {
-    margin-top: 130px;
+    margin-top: 85px;
 }
 
 .last__two-inputs {

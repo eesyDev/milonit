@@ -191,7 +191,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
         bascketBtn.onclick = function() {
             overlay.style.display = 'block';
-            headerWrap.style.display = 'none';
+            // headerWrap.style.display = 'none';
         }
         close.onclick = function() {
             overlay.style.display = 'none';
