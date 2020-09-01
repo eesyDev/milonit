@@ -2660,7 +2660,7 @@ section {
     .popup__wrapper .popup__tel--title {
         font-size: 20px;
         margin: 0;
-        padding-top: 45px;
+        padding-top: 20px;
     }
 
     .popup__wrapper .popup__tel--input {
