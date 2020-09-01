@@ -1653,6 +1653,7 @@
         padding-top: 0;
         min-height: 1173px;
         background-size: 100% !important;
+        background-position: center bottom;
         background-image: url(../images/8table.png);
         margin-top: -1415px;
         position: relative;
@@ -1910,6 +1911,12 @@
     .slider__four-info-img {
         transform: translateX(18%);
     }
+    .contacts__info {
+        margin: 268px auto 0;
+    }
+    .contacts__numb {
+        top: -13rem
+    }
 }
 @media(max-width: 850px) {
     .syspenz__piece {
@@ -1920,14 +1927,10 @@
         min-height: 2000px;
     }
     .contacts__numb {
-        top: -150px;
-        margin-left: -25px;
+        top: -200px;
     }
     .contacts__info {
-        margin: 150px auto 0;
-    }
-    .contacts__buble {
-        top: -229px;
+        margin: 265px auto 0;
     }
     .footer__wrapper--info-number a {
         width: 99%;
@@ -3961,6 +3964,7 @@
     }
     .contacts__buble {
         margin-top: -5rem;
+        top: -240px
     }
     .contacts__buble:after {
         width: 560px;
