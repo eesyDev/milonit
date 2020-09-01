@@ -457,6 +457,10 @@
     }
     .contacts {
         min-height: 1015px;
+        background-size: 107% 91% !important
+    }
+    footer {
+        margin-top: -95px;
     }
 }
 
@@ -776,10 +780,6 @@
         height: 600px;
         flex: 0 0 320px;
     }
-    .contacts {
-        margin-top: -435px;
-        padding-top: 410px;
-    }
     .contacts__buble {
         width: 420px;
         height: 420px;
@@ -868,6 +868,10 @@
     }
     .contacts__buble-form .button-wrapper {
         width: 282px;
+    }
+    .contacts__buble-warning {
+        max-width: 253px;
+        padding-left: 34px;
     }
     .button-inside {
         width: 100% !important;
@@ -1592,7 +1596,7 @@
     }
     .review {
         margin-top: -662px;
-        min-height: 3410px;
+        min-height: 3546px;
         padding: 2rem 0;
         background-image: url(../images/7table.png)
     }
@@ -1647,7 +1651,7 @@
     }
     .contacts {
         padding-top: 0;
-        min-height: 1350px;
+        min-height: 1173px;
         background-size: 100% !important;
         background-image: url(../images/8table.png);
         margin-top: -1415px;
@@ -1660,7 +1664,7 @@
     }
     .contacts__numb {
         position: absolute;
-        top: -14rem
+        top: -25rem
     }
     .contacts__buble {
         width: 100%;
@@ -1669,7 +1673,7 @@
         padding: 5rem 0;
         position: relative;
         justify-content: space-around;
-        top: -182px;
+        top: -410px;
     }
     .contacts__buble>* {
         position: relative;
@@ -1678,7 +1682,7 @@
     .contacts__buble::after {
         content: '';
         position: absolute;
-        width: 700px;
+        width: 600px;
         background-repeat: no-repeat;
         top: 10px;
         background-size: 100%;
@@ -1712,7 +1716,7 @@
         padding: 0;
         max-width: 480px;
         position: relative;
-        bottom: 220px;
+        bottom: 375px;
     }
     .contacts__item+.contacts__item {
         margin-top: 2.5rem
@@ -3953,10 +3957,10 @@
         margin-top: -1590px;
     }
     .contacts__info {
-        margin: 160px auto 0;
+        margin: 285px auto 0;
     }
     .contacts__buble {
-        margin-top: 6rem;
+        margin-top: -5rem;
     }
     .contacts__buble:after {
         width: 560px;
