@@ -2361,7 +2361,7 @@
 
 @media (max-width: 750px) {
     .contacts__buble-subtitle {
-        margin-top: 15px;
+        margin-top: 10px;
         text-align: center;
     }
     .contacts__buble-in {
@@ -2825,9 +2825,6 @@
         background-position: bottom;
         bottom: -290px;
         padding-top: 70px;
-    }
-    .contacts__info {
-        margin: 125px auto 0;
     }
     .contacts__numb {
         display: none
@@ -3999,8 +3996,9 @@
         width: 95%;
     }
     .popup__wrapper .contacts__buble-warning {
-        width: 115%;
+        width: 100%;
         font-size: 10px;
+        padding-left: 40px;
     }
     footer .footer__wrapper--info-number {
         margin: 1rem 0 0;

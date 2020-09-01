@@ -2595,7 +2595,7 @@ section {
 
 @media screen and (max-width:750px) {
     .popup__wrapper .popup__tel {
-        width: 300px;
+        width: 340px;
         height: 430px;
         padding: 5px;
         font-size: 14px !important;
@@ -2658,19 +2658,29 @@ section {
     }
 
     .popup__wrapper .popup__tel--title {
-        font-size: 20px;
+        font-size: 23px;
         margin: 0;
         padding-top: 20px;
     }
 
     .popup__wrapper .popup__tel--input {
-        padding: 7px 21px 7px 40px;
-        width: 90%;
-        margin-left: 18px;
+        padding: 7px 21px 7px 68px;
+        width: 290px;
+        height: 52px;
     }
     
     .popup__wrapper .popup__tel .closet-popup::after, .popup__wrapper .popup__tel .closet-popup::before {
         width: 24px;
+    }
+
+    #popup_button {
+        width: 284px !important;
+        height: 46px;
+    }
+
+    #popup_button button {
+        height: 100% !important;
+        font-size: 12px;
     }
 }
 
@@ -2711,16 +2721,18 @@ section {
     }
 
     .telephone-icon::before {
-        top: 20px;
-        left: 32px
+        top: 16px;
+        left: 22px;
+        padding-right: 30px;
+        border-right: 1px solid #a8dbd5;
     }
 
     .contacts__buble-warning {
         width: 250px;
     }
     .contacts__buble-warning::before {
-        left: 3px;
-        top: 7px;
+        left: 14px;
+        top: 1px;
     }
 }
 
@@ -2729,7 +2741,7 @@ section {
     position: absolute;
     background-image: url(../images/user-icon.svg);
     width: 20px;
-    height: 20px;
+    height: 21px;
     z-index: 2;
     background-repeat: no-repeat;
     top: 17px;
@@ -2738,8 +2750,10 @@ section {
 
 @media screen and (max-width:750px) {
     .user-icon::before {
-        top: 17px;
-        left: 31px
+        top: 15px;
+        left: 21px;
+        padding-right: 32px;
+        border-right: 1px solid #a8dbd5;
     }
 }
 
