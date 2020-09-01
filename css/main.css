@@ -2660,7 +2660,7 @@ section {
     .popup__wrapper .popup__tel--title {
         font-size: 20px;
         margin: 0;
-        padding-top: 5px;
+        padding-top: 45px;
     }
 
     .popup__wrapper .popup__tel--input {
@@ -2713,6 +2713,14 @@ section {
     .telephone-icon::before {
         top: 20px;
         left: 32px
+    }
+
+    .contacts__buble-warning {
+        width: 250px;
+    }
+    .contacts__buble-warning::before {
+        left: 3px;
+        top: 7px;
     }
 }
 
