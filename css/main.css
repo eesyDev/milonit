@@ -438,6 +438,10 @@ section {
     right: 3px
 }
 
+.popup__tel .mb-1:after {
+    content: none;
+}
+
 .menu-active .overlay {
     display: block;
     position: fixed;
