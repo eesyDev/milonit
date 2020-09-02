@@ -278,6 +278,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
+        lazyLoad: 'progressive',
         // prevArrow: '<button type="button" class="slick-prev"><img src="../images/arrowLeft.png"></img></button>',
         // nextArrow: '<button type="button" class="slick-next"><img src="../images/arrowRight.png"></img></button>',
         responsive: [{
