@@ -1154,6 +1154,20 @@
         min-height: 2750px;
         margin: -315px 0 -540px;
     }
+
+    .about-us__main-buble .main-buble__wrapper:nth-child(1) .main-buble__wrapper-number,
+    .about-us__main-buble .main-buble__wrapper:nth-child(2) .main-buble__wrapper-number,
+    .about-us__main-buble .main-buble__wrapper:nth-child(3) .main-buble__wrapper-number,
+    .about-us__main-buble .main-buble__wrapper:nth-child(5) .main-buble__wrapper-number,
+    .about-us__main-buble .main-buble__wrapper:nth-child(6) .main-buble__wrapper-number {
+        margin-top: 70px;
+    }
+
+    .about-us__main-buble .main-buble__wrapper:nth-child(4) .main-buble__wrapper-number,
+    .about-us__main-buble .main-buble__wrapper:nth-child(7) .main-buble__wrapper-number {
+        margin-top: 15px;
+    }
+
     .about-us__inner .about-us__inner {
         padding-top: 65px;
     }
@@ -1257,7 +1271,7 @@
     .low-circle {
         overflow: auto;
         border-radius: 0;
-        min-height: 55%;
+        min-height: 30%;
         max-width: 70%;
         margin-bottom: 20px
     }
