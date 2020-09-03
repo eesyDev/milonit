@@ -930,6 +930,19 @@ section {
     text-shadow: 2px 2px 0 rgba(129, 56, 108, .5)
 }
 
+.about-us__main-buble .main-buble__wrapper:nth-child(1) .main-buble__wrapper-number,
+.about-us__main-buble .main-buble__wrapper:nth-child(2) .main-buble__wrapper-number,
+.about-us__main-buble .main-buble__wrapper:nth-child(3) .main-buble__wrapper-number,
+.about-us__main-buble .main-buble__wrapper:nth-child(5) .main-buble__wrapper-number,
+.about-us__main-buble .main-buble__wrapper:nth-child(6) .main-buble__wrapper-number {
+    margin-top: 150px;
+}
+
+.about-us__main-buble .main-buble__wrapper:nth-child(4) .main-buble__wrapper-number,
+.about-us__main-buble .main-buble__wrapper:nth-child(7) .main-buble__wrapper-number {
+    margin-top: 60px;
+}
+
 .about-us__main-buble .main-buble__wrapper-number img {
     height: 72px;
     margin-top: 5px;
@@ -2085,6 +2098,24 @@ section {
 
 .review__item+.review__item {
     margin-left: 30px
+}
+
+.review__item:nth-child(1):after,
+.review__item:nth-child(5):after,
+.review__item:nth-child(6):after,
+.review__item:nth-child(8):after,
+.review__item:nth-child(9):after {
+    content: url(../images/play.png);
+    opacity: .7;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 42%;
+    left: -60%;
+}
+.review__item:hover:after {
+    content: none;
 }
 
 .review__item-social {
