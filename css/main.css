@@ -935,12 +935,19 @@ section {
 .about-us__main-buble .main-buble__wrapper:nth-child(3) .main-buble__wrapper-number,
 .about-us__main-buble .main-buble__wrapper:nth-child(5) .main-buble__wrapper-number,
 .about-us__main-buble .main-buble__wrapper:nth-child(6) .main-buble__wrapper-number {
-    margin-top: 150px;
+    margin-top: 75px;
 }
 
 .about-us__main-buble .main-buble__wrapper:nth-child(4) .main-buble__wrapper-number,
 .about-us__main-buble .main-buble__wrapper:nth-child(7) .main-buble__wrapper-number {
-    margin-top: 60px;
+    margin-top: 20px;
+}
+
+.about-us__main-buble .main-buble__wrapper:nth-child(4) .low-circle {
+    min-height: 60%;
+}
+.about-us__main-buble .main-buble__wrapper:nth-child(7) .low-circle {
+    min-height: 54%;
 }
 
 .about-us__main-buble .main-buble__wrapper-number img {
@@ -976,7 +983,8 @@ section {
     font-family: SeogeNormal, sans-serif;
     font-weight: 300;
     line-height: 20px;
-    max-width: 410px
+    max-width: 410px;
+    color: #2D1526;
 }
 
 .about-us__buble {
@@ -1151,7 +1159,7 @@ section {
 .low-circle {
     max-width: 90%;
     width: 100%;
-    min-height: 65%;
+    min-height: 45%;
     align-items: flex-start;
     justify-content: center;
     display: flex;

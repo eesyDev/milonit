@@ -3766,9 +3766,6 @@
     .about-us__bubles {
         top: 60px
     }
-    .about-us__subtitle {
-        font-size: 14px;
-    }
     .about-us__buble:nth-child(odd) {
         margin-right: 38px;
     }
@@ -3843,16 +3840,16 @@
         line-height: 34px;
     }
     .facts__item-1 {
-        left: 10px;
+        left: -30px;
     }
     .facts__item-2 {
-        right: -10px
+        right: -50px
     }
     .facts__item-3 {
-        left: 0;
+        left: -60px;
     }
     .facts__item-4 {
-        left: 195px;
+        left: 145px;
     }
     .facts__item-text--1:after {
         top: 267px;
@@ -4161,7 +4158,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
     .header__cart--link {
         width: 16px;
         height: 20px;
