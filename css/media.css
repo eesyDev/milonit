@@ -1643,6 +1643,13 @@
         width: 400px;
         margin: 0 15px;
     }
+    .review__item:nth-child(1):after,
+    .review__item:nth-child(5):after,
+    .review__item:nth-child(6):after,
+    .review__item:nth-child(8):after,
+    .review__item:nth-child(9):after {
+        content: none;
+    }
     .review__item-social {
         top: 0;
     }
