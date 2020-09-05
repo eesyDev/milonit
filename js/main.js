@@ -178,12 +178,14 @@ window.addEventListener('DOMContentLoaded', function() {
         burgerBtn.addEventListener('click', function(e) {
             e.preventDefault();
             headerMenu.classList.toggle('menu-active');
-        })
+        });
 
     let overlay = document.getElementById('overlay'),
         buyBtn1 = document.getElementById('buy-1-btn'),
+        burgerOverlay = document.getElementById('burger-overlay'),
         bascketBtn = document.querySelector('#basket-btn'),
         close = document.getElementsByClassName('close')[0],
+        linkBurger = document.querySelectorAll('.nav__wrapper--link'),
         headerWrap = document.getElementsByClassName('header__wrapper')[0];
         buyBtn1.onclick = function() {
             overlay.style.display = 'block';
@@ -191,7 +193,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }
         bascketBtn.onclick = function() {
             overlay.style.display = 'block';
-            // headerWrap.style.display = 'none';
         }
         close.onclick = function() {
             overlay.style.display = 'none';
@@ -199,9 +200,15 @@ window.addEventListener('DOMContentLoaded', function() {
         }
         window.onclick = function(event) {
             if (event.target == overlay) {
-                overlay.style.display = 'none';
+               overlay.style.display = 'none';
+                
             }
         }
+        linkBurger.forEach(function(e, i) {
+            linkBurger[i].addEventListener('click', function() {
+                headerMenu.classList.remove('menu-active');
+            })
+        })
     //forms
     $('#first-form form').validate({
         rules: {
@@ -289,3 +296,4 @@ $(document).ready(function(){
         }]
     });
 });
+

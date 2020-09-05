@@ -1160,12 +1160,19 @@
     .about-us__main-buble .main-buble__wrapper:nth-child(3) .main-buble__wrapper-number,
     .about-us__main-buble .main-buble__wrapper:nth-child(5) .main-buble__wrapper-number,
     .about-us__main-buble .main-buble__wrapper:nth-child(6) .main-buble__wrapper-number {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .about-us__main-buble .main-buble__wrapper:nth-child(4) .main-buble__wrapper-number,
     .about-us__main-buble .main-buble__wrapper:nth-child(7) .main-buble__wrapper-number {
         margin-top: 15px;
+    }
+
+    .about-us__main-buble .main-buble__wrapper:nth-child(4) .low-circle {
+        margin-bottom: 35px;
+    }
+    .about-us__main-buble .main-buble__wrapper:nth-child(7) .low-circle {
+        margin-bottom: 15px;
     }
 
     .about-us__inner .about-us__inner {
@@ -1272,8 +1279,8 @@
         overflow: auto;
         border-radius: 0;
         min-height: 30%;
-        max-width: 70%;
-        margin-bottom: 20px
+        max-width: 75%;
+        margin-bottom: 50px
     }
     .about-us__inner {
         top: 460px;
@@ -1563,7 +1570,7 @@
         z-index: 2
     }
     .opt__title {
-        font-size: 36px;
+        font-size: 35px;
         line-height: 50px;
         margin: 20px auto 3rem;
         width: 85%;
@@ -1774,6 +1781,7 @@
     footer .footer__wrapper--info-company {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
         margin-bottom: 52px
     }
@@ -3108,6 +3116,15 @@
         left: -315px;
         top: 1262px;
     }
+    .about-us__main-buble .main-buble__wrapper:nth-child(4) .main-buble__wrapper-number,
+    .about-us__main-buble .main-buble__wrapper:nth-child(7) .main-buble__wrapper-number {
+        margin-top: 30px;
+    }
+
+    .about-us__main-buble .main-buble__wrapper:nth-child(4) .low-circle,
+    .about-us__main-buble .main-buble__wrapper:nth-child(7) .low-circle {
+        min-height: 50%;
+    }
     .application {
         min-height: 1430px;
         margin-top: -385px;
@@ -3761,10 +3778,10 @@
     }
     .about-us__inner {
         left: 32px;
-        top: 325px;
+        top: 345px;
     }
     .about-us__bubles {
-        top: 60px
+        top: 80px
     }
     .about-us__buble:nth-child(odd) {
         margin-right: 38px;
@@ -3877,7 +3894,7 @@
         min-height: 2260px !important;
     }
     .syspenz__inner {
-        padding-top: 65px;
+        padding-top: 90px;
     }
     .syspenz__title {
         font-size: 23px;
@@ -3900,7 +3917,7 @@
         padding-top: 0;
     }
     .opt__title {
-        font-size: 20px;
+        font-size: 22px;
         margin: 142px 0 2rem;
         width: 100%;
     }
