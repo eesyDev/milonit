@@ -4263,15 +4263,15 @@
         width: 315px;
         left: -11px;
     }
-    .syspenz {
-        min-height: 2350px !important;
+    .syspenz__inner {
+        padding-top: 150px;
     }
     .opt {
         min-height: 2110px !important;
         margin-top: -1550px;
     }
     .opt__title {
-        margin: 192px 0 2rem;
+        margin: 224px 0 2rem;
     }
     .opt__content {
         margin-top: -70px;
