@@ -4400,7 +4400,7 @@
     }
 }
 
-@media screen and (max-width: 379px) and (min-resolution: 144dpi) {
+@media screen and (max-width: 379px) and (min-resolution: 1.2dppx) {
     .facts__item-1 {
         left: -51px;
     }
