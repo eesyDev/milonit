@@ -938,16 +938,18 @@ section {
     margin-top: 75px;
 }
 
-.about-us__main-buble .main-buble__wrapper:nth-child(4) .main-buble__wrapper-number,
-.about-us__main-buble .main-buble__wrapper:nth-child(7) .main-buble__wrapper-number {
+.about-us__main-buble .main-buble__wrapper:nth-child(4) .main-buble__wrapper-number {
     margin-top: 20px;
+}
+.about-us__main-buble .main-buble__wrapper:nth-child(7) .main-buble__wrapper-number {
+    margin-top: 53px;
 }
 
 .about-us__main-buble .main-buble__wrapper:nth-child(4) .low-circle {
     min-height: 60%;
 }
 .about-us__main-buble .main-buble__wrapper:nth-child(7) .low-circle {
-    min-height: 54%;
+    min-height: 58%;
 }
 
 .about-us__main-buble .main-buble__wrapper-number img {
@@ -1049,6 +1051,10 @@ section {
     background-image: url(../images/button.png);
     height: 392px;
     background-size: cover
+}
+
+.about-us__buble:nth-child(7) .about-us__buble--wrapper .about-us__buble-text{
+    font-size: 18px;
 }
 
 .about-us__buble--wrapper .traced {
