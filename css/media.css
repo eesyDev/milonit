@@ -4400,7 +4400,7 @@
     }
 }
 
-@media (max-width: 379px) and (min-resolution: 2dppx) {
+@media (max-width: 379px) and (min-resolution: 1.5dppx) {
     .facts__item-1 {
         left: -51px;
     }
@@ -4426,6 +4426,6 @@
         left: 15px;
     }
     .slider-buy {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
