@@ -301,7 +301,7 @@
         margin-top: 360px;
     }
     .contacts__info {
-        margin-top: 414px;
+        margin-top: 490px;
     }
     .contacts__numb {
         top: 283px;
@@ -801,7 +801,7 @@
         left: 15px;
     }
     .contacts__info {
-        margin: -20px 0 0 45px;
+        margin: 65px 0 0 45px;
         padding-left: 40px;
     }
     .contacts__buble-form-wrapper {
@@ -2847,7 +2847,7 @@
         overflow: visible;
     }
     .contacts {
-        min-height: 1325px !important;
+        min-height: 1000px !important;
         margin-top: -100px;
         padding-top: 120px;
         background-repeat: no-repeat;
@@ -3857,16 +3857,16 @@
         line-height: 34px;
     }
     .facts__item-1 {
-        left: -50px;
+        /* left: -50px; */
     }
     .facts__item-2 {
-        right: -60px
+        /* right: -60px */
     }
     .facts__item-3 {
-        left: -60px;
+        /* left: -60px; */
     }
     .facts__item-4 {
-        left: 145px;
+        left: 189px;
     }
     .facts__item-text--1:after {
         top: 267px;
@@ -3998,10 +3998,10 @@
         margin-top: -1590px;
     }
     .contacts__info {
-        margin: 285px auto 0;
+        margin: 175px auto 0;
     }
     .contacts__buble {
-        margin-top: -5rem;
+        margin-top: -7rem;
         top: -240px
     }
     .contacts__buble:after {
@@ -4181,7 +4181,7 @@
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 379px) {
     .header__cart--link {
         width: 16px;
         height: 20px;
@@ -4231,12 +4231,37 @@
         top: 490px;
         left: -56px;
     }
+    .facts__item-1 {
+        left: -51px;
+    }
+    .facts__item-2 {
+        right: -70px
+    }
     .facts__item-3 {
+        left: -55px;
         height: 150px;
     }
     .facts__item-4 {
+        left: 143px;
         top: 955px;
         height: 150px;
+    }
+    .facts__item-text--1:after {
+        top: 267px;
+        left: 77px
+    }
+    .facts__item-text--2:after {
+        left: 128px;
+        top: 275px
+    }
+    .facts__item-text--1, .facts__item-text--2 {
+        width: 315px;
+        left: -10px;
+        top: 13%;
+    }
+    .facts__item-text--3, .facts__item-text--4 {
+        width: 315px;
+        left: -11px;
     }
     .syspenz {
         min-height: 2350px !important;
@@ -4283,10 +4308,9 @@
         width: 74%;
     }
     .contacts {
-        min-height: 1180px !important;
+        min-height: 950px !important;
     }
     .contacts__buble {
-        margin-top: 1rem;
         padding: 7rem 0;
     }
     .contacts__buble:after {
@@ -4300,9 +4324,6 @@
     .contacts__buble-input {
         width: 305px;
         height: 48px;
-    }
-    .contacts__info {
-        margin: 125px auto 0;
     }
     .contacts__buble-title {
         margin-bottom: -10px;
@@ -4384,35 +4405,6 @@
     }
     .buy__items-text {
         font-size: 9px;
-    }
-    .facts__item-1 {
-        left: -51px;
-    }
-    .facts__item-2 {
-        right: -70px
-    }
-    .facts__item-3 {
-        left: -55px;
-    }
-    .facts__item-text--1:after {
-        top: 267px;
-        left: 77px
-    }
-    .facts__item-text--2:after {
-        left: 128px;
-        top: 275px
-    }
-    .facts__item-4 {
-        left: 143px;
-    }
-    .facts__item-text--1, .facts__item-text--2 {
-        width: 315px;
-        left: -10px;
-        top: 13%;
-    }
-    .facts__item-text--3, .facts__item-text--4 {
-        width: 315px;
-        left: -11px;
     }
 }
 @media (max-width: 340px){
