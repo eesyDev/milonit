@@ -4231,10 +4231,18 @@
         top: 490px;
         left: -56px;
     }
+    .facts__item-1 {
+        left: -51px;
+    }
+    .facts__item-2 {
+        right: -70px
+    }
     .facts__item-3 {
+        left: -55px;
         height: 150px;
     }
     .facts__item-4 {
+        left: 143px;
         top: 955px;
         height: 150px;
     }
@@ -4397,24 +4405,6 @@
     }
     .buy__items-text {
         font-size: 9px;
-    }
-}
-
-@media screen and (max-width: 379px) and (min-resolution: 1.2dppx) {
-    .facts__item-1 {
-        left: -51px;
-    }
-    .facts__item-2 {
-        right: -70px
-    }
-    .facts__item-3 {
-        left: -55px;
-        height: 150px;
-    }
-    .facts__item-4 {
-        left: 143px;
-        top: 955px;
-        height: 150px;
     }
 }
 
