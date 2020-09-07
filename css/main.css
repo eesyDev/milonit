@@ -1620,6 +1620,10 @@ section {
     background-color: #9cbdc0
 }
 
+.facts__item-mobwrapper {
+    display: none;
+}
+
 .facts__item-1 {
     top: 78px;
     left: 425px

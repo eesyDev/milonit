@@ -4231,25 +4231,16 @@
         top: 490px;
         left: -56px;
     }
-    .facts__item-1 {
-        position: relative;
-        left: 5px;
-    }
-    .facts__item-2 {
-        position: relative;
-        right: -195px;
-        top: 280px;
+    .facts__highwrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 400px;
     }
     .facts__item-3 {
-        position: relative;
-        left: -10px;
-        top: 660px;
         height: 150px;
     }
     .facts__item-4 {
-        position: relative;
-        left: 193px;
-        top: 515px;
         height: 150px;
     }
     .facts__item-text--1:after {
